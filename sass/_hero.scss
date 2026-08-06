@@ -1,0 +1,142 @@
+@use "variables" as *;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 5rem;
+
+  border-radius: 2.4rem;
+
+  background: linear-gradient(to bottom, #e8dfff, #e8dfff00);
+  height: 100%;
+
+  margin: 4rem 2.5rem;
+  margin-bottom: 7rem;
+
+  &__content {
+    padding: 7rem 0;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    padding: 0.8rem 1.6rem;
+
+    background-color: $color-neutrals-50;
+    border-radius: 62rem;
+    width: fit-content;
+
+    color: $color-violet-500;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+
+    img {
+      width: 1.6rem;
+      height: 1.6rem;
+      display: block;
+    }
+  }
+
+  &__title {
+    margin: 2rem 0;
+
+    color: $color-violet-900;
+
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  &__description {
+    color: $color-neutrals-900;
+
+    font-size: 2rem;
+    line-height: 1.6;
+    padding-bottom: 5rem;
+  }
+
+  .btn-primary {
+    padding: 1.4rem 2.4rem;
+
+    border: none;
+    border-radius: 0.8rem;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: $color-button-primary-bg-1;
+    color: $color-button-primary-text-1;
+  }
+
+  //  CONTENT KANAN
+  &__card {
+    width: 40rem;
+    background-color: #fff;
+    border-radius: 2.4rem;
+    overflow: hidden;
+    padding: 1.6rem;
+
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  &__card-img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  &__card-header {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__card-content {
+    padding: 2.4rem;
+  }
+
+  &__card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1.6rem;
+
+    font-size: 1.4rem;
+    color: $color-neutrals-500;
+  }
+
+  &__card-title {
+    margin-bottom: 2.4rem;
+
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: $color-neutrals-900;
+  }
+
+  &__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    color: $color-violet-500;
+    text-decoration: none;
+
+    transition: 0.3s;
+  }
+
+  &__card-link:hover {
+    color: $color-violet-700;
+  }
+}

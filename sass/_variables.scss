@@ -1,0 +1,99 @@
+// COLOR VARIABLES
+$color-neutrals-50: #FFFFFF;
+$color-neutrals-100: #F3F3F3;
+$color-neutrals-200: #E7E7E7;
+$color-neutrals-300: #DBDBDB;
+$color-neutrals-400: #BABABA;
+$color-neutrals-500: #7C7C7C;
+$color-neutrals-600: #666666;
+$color-neutrals-700: #46494E;
+$color-neutrals-800: #35383D;
+$color-neutrals-900: #1F2125;
+
+$color-violet-50:  #F1ECFF;
+$color-violet-100: #F0E9FB;
+$color-violet-200: #DED4FA;
+$color-violet-300: #DED4FA;
+$color-violet-400: #A8BFF6;
+$color-violet-500: #7D53EB;
+$color-violet-600: #8A5ADB;
+$color-violet-700: #6D48AC;
+$color-violet-800: #4D307E;
+$color-violet-900: #2E1952;
+
+$color-bright-green-100: #AAFFE3;
+$color-bright-green-200: #80FFD5;
+$color-bright-green-300: #55FFC6;
+$color-bright-green-400: #2BFFB8;
+$color-bright-green-500: #00FFAA;
+$color-bright-green-600: #00DD93;
+$color-bright-green-700: #00BB7D;
+$color-bright-green-800: #009966;
+$color-bright-green-900: #00774F;
+
+// FONT VARIABLES 
+$font-family: 'Plus Jakarta Sans', sans-serif;
+
+// ========================================
+// BUTTON 
+// ========================================
+
+// BORDER RADIUS
+$button-radius: 0.5rem;
+
+// FONT 
+$button-font-size: 1rem;
+$button-font-weight: 700;
+$button-font-line-height: 100%;
+
+// BORDER
+$button-border-width: 1px;
+
+// COLOR BUTTON PRIMARY
+$color-button-primary-bg-1: $color-violet-500;
+$color-button-primary-bg-2: $color-neutrals-50;
+$color-button-primary-bg-3: $color-violet-200;
+
+$color-button-primary-text-1: $color-neutrals-50;
+$color-button-primary-text-2: $color-violet-500;
+$color-button-primary-border: transparent;
+
+$color-button-primary-hover-bg: $color-violet-600;
+$color-button-primary-active-bg: $color-violet-700;
+
+// COLOR BUTTON SECONDARY
+$color-button-secondary-bg-1: transparent;
+$color-button-secondary-bg-2: $color-violet-200;
+
+$color-button-secondary-text-1: $color-violet-500;
+$color-button-secondary-text-2: $color-neutrals-50;
+
+$color-button-secondary-border-1: $color-violet-500;
+$color-button-secondary-border-2: $color-neutrals-50;
+
+$color-button-secondary-hover-bg: $color-violet-50;
+$color-button-secondary-hover-border: $color-violet-400;
+
+$color-button-secondary-active-bg: $color-violet-100;
+$color-button-secondary-active-border: $color-violet-500;
+
+// COLOR BUTTON TERTIARY
+$button-tertiary-bg: transparent;
+
+$button-tertiary-text-1: $color-violet-500;
+$button-tertiary-text-2: $color-neutrals-50;
+
+$button-tertiary-hover-text: $color-violet-600;
+$button-tertiary-active-text: $color-violet-700;
+
+// COLOR BUTTON FLAT
+$button-flat-bg: transparent;
+
+$button-flat-text-1: $color-violet-500;
+$button-flat-text-2: $color-neutrals-50;
+
+$button-flat-hover-bg: $color-violet-50;
+$button-flat-active-bg: $color-violet-100;
+
+// COLOR TEXT
+$color-text-button-primary: $color-neutrals-50;

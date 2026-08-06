@@ -1,0 +1,157 @@
+@use "variables" as *;
+
+.blog {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  // ATAS
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 6rem 0;
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+
+    list-style: none;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    display: inline-block;
+
+    padding: 0.8rem 1.6rem;
+
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: $color-button-primary-text-2;
+    border: 1px solid $color-violet-500;
+    border-radius: 999px;
+
+    transition: all 0.3s;
+
+    &-all {
+      padding: 0.8rem 1.6rem;
+
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 500;
+
+      color: $color-button-primary-text-1;
+      border: 1px solid $color-violet-500;
+      border-radius: 999px;
+
+      transition: all 0.3s;
+      background-color: $color-button-primary-bg-1;
+    }
+  }
+
+  &__link:hover {
+    background: $color-button-primary-bg-1;
+    color: white;
+  }
+
+  &__link--active {
+    background: $color-violet-500;
+    color: white;
+  }
+
+  &__search input {
+    width: 28rem;
+    padding: 1rem 1.6rem;
+
+    border: 1px solid $color-neutrals-300;
+    border-radius: 0.75rem;
+
+    font-size: 1.4rem;
+    outline: none;
+
+    transition: border-color 0.1s ease-in-out;
+  }
+
+  &__search input::placeholder {
+    color: $color-neutrals-400;
+  }
+
+  &__search input:focus {
+    border-color: $color-violet-500;
+  }
+
+  // =========================================
+  // CARD
+  // =========================================
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    &-card-img {
+      border-radius: 1rem;
+      width: 100%;
+      display: block;
+    }
+
+    &-card-title {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    &-card-description {
+      font-size: 1.6rem;
+      padding: 0.5rem 0;
+    }
+
+    &-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      margin: 1.6rem 0;
+
+      font-size: 1.4rem;
+      color: $color-neutrals-500;
+    }
+  }
+
+  .load_more-btn {
+    text-align: center;
+
+    margin: 10rem 0;
+
+    &__style {
+      background-color: $color-button-secondary-bg-1;
+      color: $color-button-secondary-text-1;
+      border: 1px solid $color-button-secondary-border-1;
+
+      font-size: 1.1rem;
+      font-weight: $button-font-weight;
+
+      padding: 1rem;
+      border-radius: 0.5rem;
+
+      text-decoration: none;
+
+      transition: color 0.3s ease;
+
+      &:hover {
+        background-color: $color-button-primary-hover-bg;
+        color: $color-text-button-primary;
+      }
+    }
+  }
+}
