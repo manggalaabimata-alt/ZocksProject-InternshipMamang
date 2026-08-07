@@ -310,4 +310,58 @@ body {
   color: #FFFFFF;
 }
 
+.brands {
+  display: flex;
+  justify-content: center;
+}
+.brands__container {
+  width: 100%;
+  margin: 0 auto;
+}
+.brands__text {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: #2E1952;
+  text-align: center;
+}
+.brands__text span {
+  color: #7D53EB;
+}
+.brands__company-logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  gap: 4rem;
+  margin: 1rem 0;
+}
+.brands__track {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.cta {
+  background-color: #7D53EB;
+  margin: 10rem 5rem;
+  max-width: 100%;
+  justify-content: center;
+  border-radius: 1.5rem;
+}
+.cta__content {
+  margin: 5rem 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

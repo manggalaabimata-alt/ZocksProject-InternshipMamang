@@ -1,0 +1,52 @@
+@use "variables" as *;
+
+.brands {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: $color-violet-900;
+    text-align: center;
+  }
+
+  &__text span {
+    color: $color-violet-500;
+  }
+
+  &__company-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    gap: 4rem;
+    margin: 1rem 0;
+  }
+
+  &__track {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: max-content;
+
+    animation: marquee 20s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+.cta {
+    background-color: $color-violet-500;
+    // height: 10rem;
+    margin: 10rem 5rem;
+    max-width: 100%;
+    justify-content: center;
+    border-radius: 1.5rem;
+
+    &__content {
+        margin: 5rem 2rem;
+    }
+}
