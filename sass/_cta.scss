@@ -1,14 +1,163 @@
 @use "variables" as *;
 
 .cta {
-    background-color: $color-violet-500;
-    // height: 10rem;
-    margin: 10rem 5rem;
-    max-width: 100%;
-    justify-content: center;
-    border-radius: 1.5rem;
+  margin: 4rem 2.5rem;
 
-    &__content {
-        margin: 5rem 2rem;
+  background-color: $color-violet-500;
+  border-radius: 1.5rem;
+
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+  }
+
+  // CONTENT LEFT
+  &__left {
+    width: 50%;
+    padding: 12rem 5rem;
+
+    color: #fff;
+    gap: 2rem;
+  }
+
+  &__title {
+    max-width: 50rem;
+    margin-bottom: 1.6rem;
+
+    font-size: 4rem;
+    line-height: 1.15;
+  }
+
+  &__paragraph {
+    max-width: 52rem;
+
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 2.4rem;
+
+    &__start {
+      text-decoration: none;
+      background-color: $color-button-primary-bg-2;
+      color: $color-button-primary-text-2;
+      height: $button-height;
+
+      padding: 1rem;
+      font-size: $button-font-size;
+      font-weight: $button-font-weight;
+      line-height: $button-font-line-height;
+      border-radius: $button-radius;
     }
+
+    &__demo {
+      text-decoration: none;
+      background-color: $color-button-secondary-bg-1;
+      border: 1px solid $color-button-secondary-border-2;
+      color: $color-button-secondary-text-2;
+      height: $button-height;
+
+      padding: 1rem;
+      border-radius: $button-radius;
+      font-weight: $button-font-weight;
+      font-size: $button-font-size;
+      line-height: $button-font-line-height;
+    }
+  }
+
+  &__bottom {
+    position: relative;
+
+    margin-top: 1rem;
+    margin-left: 3rem;
+
+    height: 4rem;
+
+    color: #fff;
+
+    img {
+      position: absolute;
+
+      width: 5rem;
+
+      left: 0;
+      top: 0;
+    }
+
+    span {
+      position: absolute;
+
+      left: 4rem;
+      top: 2rem;
+
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+
+  // CONTENT RIGHT
+  &__right {
+    width: 50%;
+    position: relative;
+
+    &__background {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      right: 5rem;
+
+      transform: rotate(-0.92deg);
+
+      z-index: 1;
+    }
+
+    &__image {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      top: 0;
+      left: 0;
+
+      z-index: 2;
+    }
+  }
+}
+
+.image__behind {
+  &__1,
+  &__2,
+  &__3 {
+    position: absolute;
+  }
+
+  &__1 {
+    z-index: 5;
+
+    bottom: 0;
+    right: 0;
+  }
+
+  &__3 {
+    z-index: 5;
+
+    top: 5rem;
+    right: 0;
+  }
+
+  &__2 {
+    z-index: 5;
+
+    top: 30rem;
+    left: -6rem;
+  }
 }

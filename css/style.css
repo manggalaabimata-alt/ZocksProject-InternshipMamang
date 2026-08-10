@@ -313,6 +313,7 @@ body {
 .brands {
   display: flex;
   justify-content: center;
+  padding: 3.375rem 6.25rem;
 }
 .brands__container {
   width: 100%;
@@ -354,14 +355,118 @@ body {
   }
 }
 .cta {
+  margin: 4rem 2.5rem;
   background-color: #7D53EB;
-  margin: 10rem 5rem;
-  max-width: 100%;
-  justify-content: center;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 .cta__content {
-  margin: 5rem 2rem;
+  display: flex;
+}
+.cta__left {
+  width: 50%;
+  padding: 12rem 5rem;
+  color: #fff;
+  gap: 2rem;
+}
+.cta__title {
+  max-width: 50rem;
+  margin-bottom: 1.6rem;
+  font-size: 4rem;
+  line-height: 1.15;
+}
+.cta__paragraph {
+  max-width: 52rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.cta__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.4rem;
+}
+.cta__buttons__start {
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #7D53EB;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 100%;
+  border-radius: 0.5rem;
+}
+.cta__buttons__demo {
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 100%;
+}
+.cta__bottom {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  height: 4rem;
+  color: #fff;
+}
+.cta__bottom img {
+  position: absolute;
+  width: 5rem;
+  left: 0;
+  top: 0;
+}
+.cta__bottom span {
+  position: absolute;
+  left: 4rem;
+  top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.cta__right {
+  width: 50%;
+  position: relative;
+}
+.cta__right__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 5rem;
+  transform: rotate(-0.92deg);
+  z-index: 1;
+}
+.cta__right__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.image__behind__1, .image__behind__2, .image__behind__3 {
+  position: absolute;
+}
+.image__behind__1 {
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+}
+.image__behind__3 {
+  z-index: 5;
+  top: 5rem;
+  right: 0;
+}
+.image__behind__2 {
+  z-index: 5;
+  top: 30rem;
+  left: -6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
