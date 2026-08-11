@@ -1,5 +1,12 @@
 @use "variables" as *;
 
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $color-neutrals-50;
+}
 .navbar {
   display: flex;
   align-items: center;
