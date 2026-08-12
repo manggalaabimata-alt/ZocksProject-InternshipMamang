@@ -146,7 +146,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: $color-neutrals-50;
+    background-color: #F1ECFF;
   }
 
   .navbar__checkbox:checked ~ .navbar__content {
@@ -166,7 +166,11 @@
     &__content {
       display: none;
       width: 100%;
-      margin-left: 0;
+      margin: 2rem 0;
+      padding: 1rem;
+
+      background-color: #fff;
+      border-radius: 0.75rem;
     }
 
     &__list {
@@ -185,7 +189,8 @@
       align-items: stretch;
 
       gap: 1.6rem;
-      margin-top: 3rem;
+      bottom: 0;
+      min-height: 100vh;
     }
 
     &__toggle {

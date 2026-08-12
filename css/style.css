@@ -128,7 +128,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #FFFFFF;
+    background-color: #F1ECFF;
   }
   .navbar__checkbox:checked ~ .navbar__content {
     display: block;
@@ -145,7 +145,10 @@ body {
   .navbar__content {
     display: none;
     width: 100%;
-    margin-left: 0;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
   }
   .navbar__list {
     display: flex;
@@ -160,7 +163,8 @@ body {
     flex-direction: column;
     align-items: stretch;
     gap: 1.6rem;
-    margin-top: 3rem;
+    bottom: 0;
+    min-height: 100vh;
   }
   .navbar__toggle {
     display: flex;
