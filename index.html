@@ -17,18 +17,30 @@
     <title>Zocks</title>
   </head>
   <body>
-    <!-- NAVBAR START -->
+
+    <!-- SECTION NAVBAR START -->
     <header class="header">
       <nav class="navbar">
-        <div class="navbar__left">
-          <a href="#" class="navbar__logo">
-            <img
-              src="assets/icons/Logo_nav.svg"
-              alt="Logo"
-              class="navbar__logo-img"
-            />
-          </a>
+        <input type="checkbox" id="navbar-toggle" class="navbar__checkbox" />
 
+        <div class="navbar__top">
+          <div class="navbar__left">
+            <a href="#" class="navbar__logo">
+              <img
+                src="assets/icons/Logo_nav.svg"
+                alt="Logo"
+                class="navbar__logo-img"
+              />
+            </a>
+          </div>
+
+          <label for="navbar-toggle" class="navbar__toggle">
+            <span class="navbar__toggle-menu">☰ Menu</span>
+            <span class="navbar__toggle-close">× Close</span>
+          </label>
+        </div>
+
+        <div class="navbar__content">
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="#" class="navbar__menu">
@@ -52,7 +64,7 @@
             </li>
 
             <li class="navbar__item">
-              <a href="#" class="navbar__menu">Pricing</a>
+              <a href="#" class="navbar__menu"> Pricing </a>
             </li>
 
             <li class="navbar__item">
@@ -62,15 +74,16 @@
               </a>
             </li>
           </ul>
-        </div>
 
-        <div class="navbar__action">
-          <a href="#" class="btn-login btn--primary"> Login </a>
-          <a href="#" class="btn-start"> Start your free trial </a>
+          <div class="navbar__action">
+            <a href="#" class="btn-login btn--primary"> Login </a>
+
+            <a href="#" class="btn-start"> Start your free trial </a>
+          </div>
         </div>
       </nav>
     </header>
-    <!-- NAVBAR END -->
+    <!-- SECTION NAVBAR END -->
 
     <!-- SECTION HERO START -->
     <section class="hero">
