@@ -39,15 +39,12 @@ body {
   display: flex;
   align-items: center;
 }
-.navbar__left {
-  display: flex;
-  align-items: center;
-}
 .navbar__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex: 1;
+  margin-left: 4.8rem;
 }
 .navbar__toggle {
   display: none;
@@ -92,7 +89,6 @@ body {
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 0.4rem;
 }
 .navbar__action {
   display: flex;
@@ -128,10 +124,10 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #F1ECFF;
+    background-color: #f1ecff;
   }
   .navbar__checkbox:checked ~ .navbar__content {
-    display: block;
+    display: flex;
   }
   .navbar {
     flex-direction: column;
@@ -145,10 +141,18 @@ body {
   .navbar__content {
     display: none;
     width: 100%;
-    margin: 2rem 0;
-    padding: 1rem;
+    min-height: calc(100vh - 7rem);
+    margin: 2rem 0 0;
+    padding: 2rem;
     background-color: #fff;
     border-radius: 0.75rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navbar__menu {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2rem;
   }
   .navbar__list {
     display: flex;
@@ -163,8 +167,8 @@ body {
     flex-direction: column;
     align-items: stretch;
     gap: 1.6rem;
-    bottom: 0;
-    min-height: 100vh;
+    margin-top: auto;
+    text-align: center;
   }
   .navbar__toggle {
     display: flex;
@@ -180,11 +184,15 @@ body {
   }
   .navbar__action {
     text-align: center;
+    padding: 0 5rem;
   }
-  .navbar__checkbox:checked + .navbar__toggle .navbar__toggle-menu {
+  .navbar__checkbox:checked ~ .navbar__content {
+    display: flex;
+  }
+  .navbar__checkbox:checked ~ .navbar__top .navbar__toggle-menu {
     display: none;
   }
-  .navbar__checkbox:checked + .navbar__toggle .navbar__toggle-close {
+  .navbar__checkbox:checked ~ .navbar__top .navbar__toggle-close {
     display: inline;
   }
 }

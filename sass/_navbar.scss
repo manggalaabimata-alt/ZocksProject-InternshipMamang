@@ -28,16 +28,13 @@
     align-items: center;
   }
 
-  &__left {
-    display: flex;
-    align-items: center;
-  }
-
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex: 1;
+
+    margin-left: 4.8rem;
   }
 
   // MOBILE TOGGLE
@@ -96,7 +93,6 @@
 
     display: flex;
     align-items: center;
-    gap: 0.4rem;
   }
 
   &__action {
@@ -146,11 +142,11 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #F1ECFF;
+    background-color: #f1ecff;
   }
 
   .navbar__checkbox:checked ~ .navbar__content {
-    display: block;
+    display: flex;
   }
 
   .navbar {
@@ -166,11 +162,22 @@
     &__content {
       display: none;
       width: 100%;
-      margin: 2rem 0;
-      padding: 1rem;
+      min-height: calc(100vh - 7rem);
+
+      margin: 2rem 0 0;
+      padding: 2rem;
 
       background-color: #fff;
       border-radius: 0.75rem;
+
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &__menu {
+      width: 100%;
+      justify-content: space-between;
+      font-size: 2rem;
     }
 
     &__list {
@@ -189,8 +196,9 @@
       align-items: stretch;
 
       gap: 1.6rem;
-      bottom: 0;
-      min-height: 100vh;
+      margin-top: auto;
+
+      text-align: center;
     }
 
     &__toggle {
@@ -212,11 +220,17 @@
 
     &__action {
       text-align: center;
+      padding: 0 5rem;
     }
   }
 
   // CHECKED STATE
-  .navbar__checkbox:checked + .navbar__toggle {
+
+  .navbar__checkbox:checked ~ .navbar__content {
+    display: flex;
+  }
+  
+  .navbar__checkbox:checked ~ .navbar__top {
     .navbar__toggle-menu {
       display: none;
     }
