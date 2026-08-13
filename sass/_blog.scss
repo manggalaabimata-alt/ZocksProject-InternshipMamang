@@ -155,3 +155,72 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .blog {
+    &__container {
+    }
+
+    &__header {
+      display: flex;
+      flex-direction: column-reverse;
+      max-width: 100vh;
+
+      align-items: flex-start;
+    }
+
+    &__categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      max-width: 95%;
+      margin-top: 1.5rem;
+    }
+
+    &__search {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+      input {
+        padding: 1.7rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    &__link {
+      padding: 0.8rem 2.5rem;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &-card-title {
+        margin-top: 1rem;
+        font-size: 1.8rem;
+      }
+
+      &-card-description {
+        font-size: 1.7rem;
+      }
+    }
+
+    &__card {
+      width: 100%;
+    }
+
+    .load_more-btn {
+      margin: 5rem 0;
+
+      &__style {
+        font-size: 1.3rem;
+        padding: 1.3rem;
+      }
+    }
+  }
+}
