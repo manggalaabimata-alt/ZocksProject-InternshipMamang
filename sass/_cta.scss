@@ -1,14 +1,41 @@
 @use "variables" as *;
 
 .cta {
+  position: relative;
+  overflow: hidden;
+
   margin: 4rem 2.5rem;
 
   background-color: $color-violet-500;
   border-radius: 1.5rem;
 
-  overflow: hidden;
+  &__background {
+    &-desktop {
+      position: absolute;
+
+      top: 0;
+      right: -2rem;
+
+      width: auto;
+      height: 100%;
+
+      z-index: 1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-mobile {
+      display: none;
+    }
+  }
 
   &__content {
+    position: relative;
+    z-index: 2;
+
     display: flex;
   }
 
@@ -16,6 +43,9 @@
   &__left {
     width: 50%;
     padding: 12rem 5rem;
+
+    display: flex;
+    flex-direction: column;
 
     color: #fff;
     gap: 2rem;
@@ -42,10 +72,8 @@
 
     margin-top: 2.4rem;
 
-    &__start {
+    a {
       text-decoration: none;
-      background-color: $color-button-primary-bg-2;
-      color: $color-button-primary-text-2;
       height: 4rem;
 
       padding: 1.4rem 1.25rem;
@@ -55,19 +83,15 @@
       border-radius: $button-radius;
     }
 
+    &__start {
+      background-color: $color-button-primary-bg-2;
+      color: $color-button-primary-text-2;
+    }
+
     &__demo {
-      text-decoration: none;
       background-color: $color-button-secondary-bg-1;
       border: 1px solid $color-button-secondary-border-2;
       color: $color-button-secondary-text-2;
-      height: 4rem;
-
-      padding: 1rem;
-      padding: 1.4rem 1.25rem;
-      font-size: 1.3rem;
-      border-radius: $button-radius;
-      font-weight: $button-font-weight;
-      line-height: $button-font-line-height;
     }
   }
 
@@ -108,19 +132,6 @@
     width: 50%;
     position: relative;
 
-    &__background {
-      position: absolute;
-
-      width: 100%;
-      height: 100%;
-
-      right: 5rem;
-
-      transform: rotate(-0.92deg);
-
-      z-index: 1;
-    }
-
     &__image {
       position: absolute;
 
@@ -131,35 +142,124 @@
       left: 0;
 
       z-index: 2;
+
+      .image__desktop {
+        &__1,
+        &__2,
+        &__3 {
+          position: absolute;
+          // visibility: hidden;
+        }
+
+        &__1 {
+          bottom: 0;
+          right: 0;
+        }
+
+        &__3 {
+          top: 5rem;
+          right: 0;
+        }
+
+        &__2 {
+          top: 28rem;
+          left: -6rem;
+        }
+      }
+
+      .image__mobile {
+        &__1,
+        &__2,
+        &__3 {
+          display: none;
+        }
+      }
     }
   }
 }
 
-.image__behind {
-  &__1,
-  &__2,
-  &__3 {
-    position: absolute;
-  }
+@media (max-width: 768px) {
+  .cta {
+    &__background {
+      &-desktop {
+        display: none;
+      }
 
-  &__1 {
-    z-index: 5;
+      &-mobile {
+        position: absolute;
 
-    bottom: 0;
-    right: 0;
-  }
+        top: 0;
+        right: 0;
 
-  &__3 {
-    z-index: 5;
+        width: auto;
+        height: 100%;
 
-    top: 5rem;
-    right: 0;
-  }
+        z-index: 1;
+        transform: rotate(-12.08 deg);
 
-  &__2 {
-    z-index: 5;
+        img {
+          height: 100%;
+          width: auto;
+          object-fit: contain;
+        }
+      }
+    }
 
-    top: 28rem;
-    left: -6rem;
+    &__content {
+      flex-direction: column;
+    }
+
+    &__left {
+      width: 100%;
+      padding: 4rem 3rem;
+    }
+
+    &__right {
+      width: 100%;
+      height: 35rem;
+
+      &__image {
+        .image__desktop {
+          &__1,
+          &__2,
+          &__3 {
+            display: none;
+          }
+        }
+
+        .image__mobile {
+          &__1,
+          &__2,
+          &__3 {
+            display: block;
+            position: absolute;
+          }
+
+          &__1 {
+            bottom: 0;
+            right: 0;
+          }
+
+          &__2 {
+            bottom: 2rem;
+            left: 0;
+          }
+
+          &__3 {
+            top: 2rem;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    &__buttons {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__bottom {
+      display: none;
+    }
   }
 }

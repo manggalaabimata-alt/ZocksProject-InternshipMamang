@@ -11,9 +11,11 @@
   }
 
   &__text {
+    
+
     font-weight: 700;
     font-size: 1.8rem;
-    margin: 1rem 0;
+    margin: 0 20rem;
     color: $color-violet-900;
     text-align: center;
   }
@@ -53,5 +55,23 @@
 }
 
 @media (max-width: 768px) {
-  
+  .brands {
+    padding: 2rem;
+
+    &__container {
+      width: 100%;
+      margin: 1rem auto;
+    }
+
+    &__text {
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__company-logos {
+      margin-top: -5rem;
+      margin-bottom: 5rem; 
+    }
+  }
 }

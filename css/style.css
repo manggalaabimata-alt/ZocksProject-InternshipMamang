@@ -336,7 +336,11 @@ body {
     max-width: 90%;
   }
   .hero .btn-primary {
-    padding: 1.4rem 10.4rem;
+    display: inline-block;
+    width: 80%;
+    max-width: 30rem;
+    padding: 1.4rem 2.4rem;
+    box-sizing: border-box;
   }
 }
 .blog__container {
@@ -513,7 +517,7 @@ body {
 .brands__text {
   font-weight: 700;
   font-size: 1.8rem;
-  margin: 1rem 0;
+  margin: 0 20rem;
   color: #2E1952;
   text-align: center;
 }
@@ -545,18 +549,57 @@ body {
     transform: translateX(-50%);
   }
 }
+@media (max-width: 768px) {
+  .brands {
+    padding: 2rem;
+  }
+  .brands__container {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  .brands__text {
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .brands__company-logos {
+    margin-top: -5rem;
+    margin-bottom: 5rem;
+  }
+}
 .cta {
+  position: relative;
+  overflow: hidden;
   margin: 4rem 2.5rem;
   background-color: #7D53EB;
   border-radius: 1.5rem;
-  overflow: hidden;
+}
+.cta__background-desktop {
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  width: auto;
+  height: 100%;
+  z-index: 1;
+}
+.cta__background-desktop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cta__background-mobile {
+  display: none;
 }
 .cta__content {
+  position: relative;
+  z-index: 2;
   display: flex;
 }
 .cta__left {
   width: 50%;
   padding: 12rem 5rem;
+  display: flex;
+  flex-direction: column;
   color: #fff;
   gap: 2rem;
 }
@@ -576,10 +619,8 @@ body {
   gap: 1rem;
   margin-top: 2.4rem;
 }
-.cta__buttons__start {
+.cta__buttons a {
   text-decoration: none;
-  background-color: #FFFFFF;
-  color: #7D53EB;
   height: 4rem;
   padding: 1.4rem 1.25rem;
   font-size: 1.3rem;
@@ -587,18 +628,14 @@ body {
   line-height: 100%;
   border-radius: 0.5rem;
 }
+.cta__buttons__start {
+  background-color: #FFFFFF;
+  color: #7D53EB;
+}
 .cta__buttons__demo {
-  text-decoration: none;
   background-color: transparent;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
-  height: 4rem;
-  padding: 1rem;
-  padding: 1.4rem 1.25rem;
-  font-size: 1.3rem;
-  border-radius: 0.5rem;
-  font-weight: 700;
-  line-height: 100%;
 }
 .cta__bottom {
   position: relative;
@@ -626,14 +663,6 @@ body {
   width: 50%;
   position: relative;
 }
-.cta__right__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  right: 5rem;
-  transform: rotate(-0.92deg);
-  z-index: 1;
-}
 .cta__right__image {
   position: absolute;
   width: 100%;
@@ -642,26 +671,81 @@ body {
   left: 0;
   z-index: 2;
 }
-
-.image__behind__1, .image__behind__2, .image__behind__3 {
+.cta__right__image .image__desktop__1, .cta__right__image .image__desktop__2, .cta__right__image .image__desktop__3 {
   position: absolute;
 }
-.image__behind__1 {
-  z-index: 5;
+.cta__right__image .image__desktop__1 {
   bottom: 0;
   right: 0;
 }
-.image__behind__3 {
-  z-index: 5;
+.cta__right__image .image__desktop__3 {
   top: 5rem;
   right: 0;
 }
-.image__behind__2 {
-  z-index: 5;
+.cta__right__image .image__desktop__2 {
   top: 28rem;
   left: -6rem;
 }
+.cta__right__image .image__mobile__1, .cta__right__image .image__mobile__2, .cta__right__image .image__mobile__3 {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  .cta__background-desktop {
+    display: none;
+  }
+  .cta__background-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    transform: rotate(-12.08 deg);
+  }
+  .cta__background-mobile img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  .cta__content {
+    flex-direction: column;
+  }
+  .cta__left {
+    width: 100%;
+    padding: 4rem 3rem;
+  }
+  .cta__right {
+    width: 100%;
+    height: 35rem;
+  }
+  .cta__right__image .image__desktop__1, .cta__right__image .image__desktop__2, .cta__right__image .image__desktop__3 {
+    display: none;
+  }
+  .cta__right__image .image__mobile__1, .cta__right__image .image__mobile__2, .cta__right__image .image__mobile__3 {
+    display: block;
+    position: absolute;
+  }
+  .cta__right__image .image__mobile__1 {
+    bottom: 0;
+    right: 0;
+  }
+  .cta__right__image .image__mobile__2 {
+    bottom: 2rem;
+    left: 0;
+  }
+  .cta__right__image .image__mobile__3 {
+    top: 2rem;
+    right: 0;
+  }
+  .cta__buttons {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta__bottom {
+    display: none;
+  }
+}
 .footer {
   margin: 4rem 2.5rem;
   padding: 4rem 6rem;
