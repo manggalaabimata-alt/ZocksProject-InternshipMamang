@@ -133,9 +133,7 @@
   }
 }
 
-// ====================
 // MOBILE
-// ====================
 
 @media (max-width: 768px) {
   .header {
@@ -229,7 +227,7 @@
   .navbar__checkbox:checked ~ .navbar__content {
     display: flex;
   }
-  
+
   .navbar__checkbox:checked ~ .navbar__top {
     .navbar__toggle-menu {
       display: none;
@@ -237,6 +235,65 @@
 
     .navbar__toggle-close {
       display: inline;
+    }
+  }
+}
+
+// TABLET
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 1.6rem 2rem;
+
+    &__left {
+      gap: 1.6rem;
+    }
+
+    &__content {
+      margin-left: 1.2rem;
+    }
+
+    &__list {
+      gap: 1.2rem;
+    }
+
+    &__menu {
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+
+    &__action {
+      flex-shrink: 0;
+      gap: 0.8rem;
+
+      .btn-login {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3.6rem;
+        height: 3.6rem;
+        padding: 0;
+        border-radius: 50%;
+        background-color: $color-neutrals-50;
+
+        &__icon {
+          width: 1.8rem;
+          height: 1.8rem;
+        }
+
+        &__text {
+          display: none;
+        }
+      }
+
+      .btn-start {
+        flex-shrink: 0;
+        padding: 0.9rem 1.2rem;
+        font-size: 1rem;
+        white-space: nowrap;
+      }
     }
   }
 }

@@ -2,7 +2,6 @@
 
 .blog {
   &__container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
   }
@@ -13,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 6rem 0;
+    padding: 3rem 0;
   }
 
   &__categories {
@@ -158,8 +157,6 @@
 
 @media (max-width: 768px) {
   .blog {
-    &__container {
-    }
 
     &__header {
       display: flex;

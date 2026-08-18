@@ -27,6 +27,7 @@
         object-fit: cover;
       }
     }
+
     &-mobile {
       display: none;
     }
@@ -40,8 +41,8 @@
   }
 
   // CONTENT LEFT
-  &__left {
-    width: 50%;
+  &__words {
+    width: 50%; 
     padding: 12rem 5rem;
 
     display: flex;
@@ -52,18 +53,14 @@
   }
 
   &__title {
-    max-width: 50rem;
-    margin-bottom: 1.6rem;
-
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 1.15;
   }
 
   &__paragraph {
-    max-width: 52rem;
-
     font-size: 1.4rem;
     line-height: 1.6;
+    font-weight: 400;
   }
 
   &__buttons {
@@ -209,7 +206,7 @@
       flex-direction: column;
     }
 
-    &__left {
+    &__words {
       width: 100%;
       padding: 4rem 3rem;
     }
