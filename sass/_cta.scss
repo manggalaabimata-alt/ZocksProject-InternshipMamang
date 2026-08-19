@@ -42,7 +42,7 @@
 
   // CONTENT LEFT
   &__words {
-    width: 50%; 
+    width: 50%;
     padding: 12rem 5rem;
 
     display: flex;
@@ -256,6 +256,72 @@
     }
 
     &__bottom {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cta {
+    &__content {
+      justify-content: center;
+    }
+
+    &__words {
+      width: 100%;
+      padding: 5rem 3rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__paragraph {
+      font-size: 1.25rem;
+      max-width: 40rem;
+    }
+
+    &__buttons {
+      justify-content: center;
+    }
+
+    &__bottom {
+      position: relative;
+
+      margin-top: 1rem;
+      margin-left: -1.5rem;
+
+      height: 4rem;
+      width: max-content; // biar container-nya ikut lebar konten, bukan 0/kecil
+
+      color: #fff;
+
+      img {
+        position: absolute;
+
+        width: 5rem;
+
+        left: 1rem;
+        top: 0;
+      }
+
+      span {
+        position: absolute;
+
+        left: 4.4rem;
+        top: 3.8rem;
+        transform: rotate(3.5deg);
+
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 150%;
+        white-space: nowrap; 
+      }
+    }
+
+    &__right {
       display: none;
     }
   }

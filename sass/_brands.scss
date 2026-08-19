@@ -75,3 +75,22 @@
     }
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .brands {
+    padding: 2.4rem 3rem;
+
+    &__text {
+      margin: 0 6rem; 
+      font-size: 1.6rem;
+    }
+
+    &__company-logos {
+      gap: 2.4rem;
+    }
+
+    &__track {
+      gap: 3rem;
+    }
+  }
+}

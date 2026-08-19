@@ -191,3 +191,39 @@
     }
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 0 2.4rem;
+    margin: 3rem 1.6rem;
+    margin-bottom: 5rem;
+
+    &__content {
+      padding: 4rem 0;
+    }
+
+    &__title {
+      font-size: 4rem;
+      margin: 1.6rem 0;
+    }
+
+    &__description {
+      font-size: 1.7rem;
+      padding-bottom: 3rem;
+    }
+
+    &__card {
+      width: 28rem; 
+      flex-shrink: 0;
+    }
+
+    &__card-content {
+      padding: 1.8rem;
+    }
+
+    &__card-title {
+      font-size: 1.7rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
