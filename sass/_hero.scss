@@ -12,11 +12,13 @@
   background: linear-gradient(to bottom, #e8dfff, #e8dfff00);
   height: 100%;
 
-  margin: 4rem 2.5rem;
+  margin: 0 2.5rem;
   margin-bottom: 7rem;
 
   &__content {
     padding: 7rem 0;
+    max-width: 57.7rem;
+    gap: 2rem;
   }
 
   &__badge {
@@ -27,12 +29,12 @@
     padding: 0.8rem 1.6rem;
 
     background-color: $color-neutrals-50;
-    border-radius: 62rem;
+    border-radius: 99.9rem;
     width: fit-content;
 
     color: $color-violet-500;
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 1;
 
@@ -48,7 +50,7 @@
 
     color: $color-violet-900;
 
-    font-size: 6.4rem;
+    font-size: 5.4rem;
     font-weight: 700;
     line-height: 1.1;
 
@@ -64,31 +66,33 @@
   &__description {
     color: $color-neutrals-900;
 
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    line-height: 150%;
     padding-bottom: 5rem;
   }
 
   .btn-primary {
-    padding: 1.4rem 2.4rem;
+    padding: 1.6rem 2rem;
 
     border: none;
     border-radius: 0.8rem;
     text-decoration: none;
 
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: $color-button-primary-bg-1;
     color: $color-button-primary-text-1;
   }
 
   //  CONTENT KANAN
   &__card {
-    width: 40rem;
+    width: 41rem;
     background-color: #fff;
-    border-radius: 2.4rem;
-    overflow: hidden;
-    padding: 1.6rem;
+    border-radius: 1.6rem;
+    padding: 8px;
+    padding-bottom: 1.6rem;
+    margin-top: 8rem;
+    margin-right: 4rem;
 
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   }
@@ -96,7 +100,7 @@
   &__card-img {
     display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     margin: 0 auto;
   }
 
@@ -117,14 +121,15 @@
 
     margin-bottom: 1.6rem;
 
-    font-size: 1.4rem;
+    font-size: 14px;
+    font-weight: 400;
     color: $color-neutrals-500;
   }
 
   &__card-title {
     margin-bottom: 2.4rem;
 
-    font-size: 2rem;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.4;
     color: $color-neutrals-900;
@@ -141,11 +146,11 @@
     color: $color-violet-500;
     text-decoration: none;
 
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
 
   &__card-link:hover {
-    color: $color-violet-700;
+    text-decoration: underline;
   }
 }
 
@@ -153,15 +158,24 @@
   .hero {
     flex-direction: column;
     padding: 0;
+    margin-top: 2rem;
 
     &__content {
       text-align: center;
       background: linear-gradient(to bottom, #e8dfff, #e8dfff00);
       border-radius: 1.5rem;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
+    }
+
+    &__badge {
+      padding: 0.8rem 1.2rem;
     }
 
     &__title {
-      font-size: 3.6rem;
+      font-size: 4rem;
+      margin: 2rem;
 
       &-desktop {
         display: none;
@@ -173,13 +187,14 @@
     }
 
     &__description {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       padding: 0 1.2rem;
-      margin: 4.5rem 0;
+      margin: 4.5rem 0.5rem;
     }
 
     &__card {
       max-width: 90%;
+      margin: 0 auto;
     }
 
     .btn-primary {
@@ -213,7 +228,7 @@
     }
 
     &__card {
-      width: 28rem; 
+      width: 28rem;
       flex-shrink: 0;
     }
 

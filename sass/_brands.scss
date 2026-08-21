@@ -3,7 +3,6 @@
 .brands {
   display: flex;
   justify-content: center;
-  padding: 3.375rem 6.25rem;
 
   &__container {
     width: 100%;
@@ -11,11 +10,8 @@
   }
 
   &__text {
-    
-
     font-weight: 700;
-    font-size: 1.8rem;
-    margin: 0 20rem;
+    font-size: 2rem;
     color: $color-violet-900;
     text-align: center;
   }
@@ -39,6 +35,7 @@
     align-items: center;
     gap: 5rem;
     width: max-content;
+    margin-bottom: 7rem;
 
     animation: marquee 20s linear infinite;
   }
@@ -56,7 +53,8 @@
 
 @media (max-width: 768px) {
   .brands {
-    padding: 2rem;
+    padding: 5.6rem 1rem;
+    gap: 4rem;
 
     &__container {
       width: 100%;
@@ -65,8 +63,10 @@
 
     &__text {
       align-items: center;
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
+      margin-bottom: 2rem;
+      font-size: 2rem;
     }
 
     &__company-logos {

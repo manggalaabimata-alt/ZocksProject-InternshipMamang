@@ -17,573 +17,604 @@
     <title>Zocks</title>
   </head>
   <body>
-    <!-- SECTION NAVBAR START -->
-    <header class="header">
-      <nav class="navbar">
-        <input type="checkbox" id="navbar-toggle" class="navbar__checkbox" />
+    <div class="container">
+      <!-- SECTION NAVBAR START -->
+      <header class="header">
+        <nav class="navbar">
+          <div class="navbar__top">
+            <div class="navbar__left">
+              <a href="#" class="navbar__logo">
+                <img
+                  src="assets/icons/Logo_nav.svg"
+                  alt="Logo"
+                  class="navbar__logo-img"
+                />
+              </a>
 
-        <div class="navbar__top">
-          <div class="navbar__left">
-            <a href="#" class="navbar__logo">
-              <img
-                src="assets/icons/Logo_nav.svg"
-                alt="Logo"
-                class="navbar__logo-img"
-              />
-            </a>
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="#" class="navbar__menu">
+                    Platform
+                    <img src="assets/icons/chevron-down.svg" alt="" />
+                  </a>
+                </li>
+
+                <li class="navbar__item">
+                  <a href="#" class="navbar__menu">
+                    Features
+                    <img src="assets/icons/chevron-down.svg" alt="" />
+                  </a>
+                </li>
+
+                <li class="navbar__item">
+                  <a href="#" class="navbar__menu">
+                    Integrations
+                    <img src="assets/icons/chevron-down.svg" alt="" />
+                  </a>
+                </li>
+
+                <li class="navbar__item">
+                  <a href="#" class="navbar__menu">Pricing</a>
+                </li>
+
+                <li class="navbar__item">
+                  <a href="#" class="navbar__menu">
+                    Resources
+                    <img src="assets/icons/chevron-down.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <input
+              type="checkbox"
+              id="navbar-toggle"
+              class="navbar__checkbox"
+              hidden
+            />
+
+            <label for="navbar-toggle" class="navbar__toggle">
+              <span class="navbar__toggle-menu"><img src="assets/icons/hamburger.svg" class="navbar__toggle-menu-hamburger"> Menu</span>
+              <span class="navbar__toggle-close">&#10005; Close</span>
+            </label>
           </div>
-
-          <label for="navbar-toggle" class="navbar__toggle">
-            <span class="navbar__toggle-menu">&#9776; Menu</span>
-            <span class="navbar__toggle-close">&#10005; Close</span>
-          </label>
-        </div>
-
-        <div class="navbar__content">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a href="#" class="navbar__menu">
-                Platform
-                <img src="assets/icons/chevron-down.svg" alt="" />
-              </a>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__menu">
-                Features
-                <img src="assets/icons/chevron-down.svg" alt="" />
-              </a>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__menu">
-                Integrations
-                <img src="assets/icons/chevron-down.svg" alt="" />
-              </a>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__menu"> Pricing </a>
-            </li>
-
-            <li class="navbar__item">
-              <a href="#" class="navbar__menu">
-                Resources
-                <img src="assets/icons/chevron-down.svg" alt="" />
-              </a>
-            </li>
-          </ul>
 
           <div class="navbar__action">
-            <a href="#" class="btn-login btn--primary"> Login </a>
+            <a href="#" class="btn-login">
+              <img src="assets/icons/user.svg" alt="" class="btn-login__icon" />
+              <span class="btn-login__text">Login</span>
+            </a>
 
-            <a href="#" class="btn-start"> Start your free trial </a>
+            <a href="#" class="btn-start">Start your free trial</a>
           </div>
-        </div>
-      </nav>
-    </header>
-    <!-- SECTION NAVBAR END -->
+        </nav>
+      </header>
+      <!-- SECTION NAVBAR END -->
 
-    <!-- SECTION HERO START -->
-    <section class="hero">
-      <div class="hero__content">
-        <span class="hero__badge">
-          <img src="assets/icons/rocket.svg" alt="" /> BLOG
-        </span>
-
-        <h1 class="hero__title">
-          <span class="hero__title-desktop">
-            Expert insights &<br />
-            industry trends
+      <!-- SECTION HERO START -->
+      <section class="hero">
+        <div class="hero__content">
+          <span class="hero__badge">
+            <img src="assets/icons/rocket.svg" alt="" /> BLOG
           </span>
 
-          <span class="hero__title-mobile">
-            Expert insights<br />
-            & industry<br />
-            trends
-          </span>
-        </h1>
+          <h1 class="hero__title">
+            <span class="hero__title-desktop">
+              Expert insights & industry trends
+            </span>
 
-        <p class="hero__description">
-          Stay informed with the latest articles, best practices, and expert
-          perspectives <br />
-          on AI, productivity, and meeting efficiency.
-        </p>
-
-        <a href="#" class="btn-primary"> Explore our blog </a>
-      </div>
-
-      <div class="hero__card">
-        <img
-          src="./assets/img/card-1.png"
-          alt="Blog Header"
-          class="hero__card-img"
-        />
-
-        <div class="hero__card-content">
-          <p class="hero__card-meta">
-            <span>Feb 14, 2025</span>
-            <span>&bull;</span>
-            <span>5 min read</span>
-          </p>
-
-          <h3 class="hero__card-title">Blog title goes here</h3>
-
-          <a href="#" class="hero__card-link">
-            Read more <img src="assets/icons/panah-right.svg" alt="" />
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION HERO END -->
-
-    <!-- SECTION BLOG START -->
-    <section class="blog">
-      <div class="blog__container">
-        <div class="blog__header">
-          <div class="blog__categories-wrapper">
-            <ul class="blog__categories">
-              <li class="blog__item">
-                <a href="#" class="blog__link-all">All</a>
-              </li>
-              <li class="blog__item">
-                <a href="#" class="blog__link">Product update</a>
-              </li>
-              <li class="blog__item">
-                <a href="#" class="blog__link">Product tutorials</a>
-              </li>
-              <li class="blog__item">
-                <a href="#" class="blog__link">General articles</a>
-              </li>
-              <li class="blog__item">
-                <a href="#" class="blog__link">General articles</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="blog__search">
-            <input type="text" placeholder="Search blog" />
-          </div>
-        </div>
-
-        <!-- CARD CONTENT -->
-        <div class="blog__content">
-          <!-- CARD 1 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-3.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-1.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-2.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 4 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-1.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 5 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-2.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 6 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-3.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 7 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-3.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 8 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-2.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-
-          <!-- CARD 9 -->
-          <div class="blog__content-card">
-            <img
-              src="assets/img/card-1.png"
-              alt="Blog Header"
-              class="blog__content-card-img"
-            />
-            <h3 class="blog__content-card-title">Blog title goes here</h3>
-            <p class="blog__content-card-description">
-              Sometimes it’s nice to put in text just to get an idea of how text
-              will fill in a space on your website.
-            </p>
-            <p class="blog__content-card-meta">
-              <span>Feb 14, 2025</span>
-              <span>&bull;</span>
-              <span>5 min read</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="load_more-btn">
-          <a href="#" class="load_more-btn__style">Load more</a>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION BLOG END -->
-
-    <!-- SECTION BRAND START -->
-    <section class="brands">
-      <div class="brands__container">
-        <p class="brands__text">
-          Leading financial advisors, firms, and enterprises choose
-          <span>Zocks AI Meeting Assistant</span> for unrivaled note-taking
-          accuracy, client insights, customization and compliance
-        </p>
-        <div class="brands__company-logos">
-          <div class="brands__track">
-            <img src="assets/img/image_(3).png" alt="" class="company-logos" />
-            <img src="assets/img/image_50.png" alt="" class="company-logos" />
-            <img src="assets/img/image_51.png" alt="" class="company-logos" />
-            <img src="assets/img/image_58.png" alt="" class="company-logos" />
-            <img src="assets/img/image_55.png" alt="" class="company-logos" />
-            <img src="assets/img/image_54.png" alt="" class="company-logos" />
-            <img src="assets/img/image_56.png" alt="" class="company-logos" />
-            <img src="assets/img/image_57.png" alt="" class="company-logos" />
-
-            <img src="assets/img/image_(3).png" alt="" class="company-logos" />
-            <img src="assets/img/image_50.png" alt="" class="company-logos" />
-            <img src="assets/img/image_51.png" alt="" class="company-logos" />
-            <img src="assets/img/image_58.png" alt="" class="company-logos" />
-            <img src="assets/img/image_55.png" alt="" class="company-logos" />
-            <img src="assets/img/image_54.png" alt="" class="company-logos" />
-            <img src="assets/img/image_56.png" alt="" class="company-logos" />
-            <img src="assets/img/image_57.png" alt="" class="company-logos" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION BRAND END -->
-
-    <!-- SECTION CTA START -->
-    <section class="cta">
-      <div class="cta__background-desktop">
-        <img src="assets/icons/vector_cta.svg" alt="" />
-      </div>
-      <div class="cta__background-mobile">
-        <img src="assets/icons/vector_mobile.svg" alt="" />
-      </div>
-
-      <div class="cta__content">
-        <div class="cta__words">
-          <h1 class="cta__title">
-            Get started for free in less than 10 minutes
+            <span class="hero__title-mobile">
+              Expert insights & industry trends
+            </span>
           </h1>
-          <p class="cta__paragraph">
-            You'll have full access to the Zocks platform, with help from our
-            team, to make sure you get the most out of your experience. Book a
-            discussion with our product experts to see how Zocks can be tailored
-            to your practice's needs.
+
+          <p class="hero__description">
+            Stay informed with the latest articles, best practices, and expert
+            perspectives <br />
+            on AI, productivity, and meeting efficiency.
           </p>
 
-          <div class="cta__buttons">
-            <a href="#" class="cta__buttons__start">Start your free trial</a>
-            <a href="#" class="cta__buttons__demo">Book a demo</a>
-          </div>
-
-          <div class="cta__bottom">
-            <img src="assets/icons/vector_14.svg" alt="" />
-            <span>30-day free trial</span>
-          </div>
+          <a href="#" class="btn-primary"> Explore our blog </a>
         </div>
 
-        <div class="cta__right">
-          <div class="cta__right__image">
-            <img src="assets/img/cta(1).png" alt="" class="image__desktop__1" />
-            <img src="assets/img/cta(2).png" alt="" class="image__desktop__3" />
-            <img src="assets/img/cta(3).png" alt="" class="image__desktop__2" />
-            <img
-              src="assets/img/cta_mobile-1.png"
-              alt=""
-              class="image__mobile__1"
-            />
-            <img
-              src="assets/img/cta_mobile-2.png"
-              alt=""
-              class="image__mobile__3"
-            />
-            <img
-              src="assets/img/cta_mobile-3.png"
-              alt=""
-              class="image__mobile__2"
-            />
+        <div class="hero__card">
+          <img
+            src="./assets/img/card-1.png"
+            alt="Blog Header"
+            class="hero__card-img"
+          />
+
+          <div class="hero__card-content">
+            <p class="hero__card-meta">
+              <span>Feb 14, 2025</span>
+              <span>&bull;</span>
+              <span>5 min read</span>
+            </p>
+
+            <h3 class="hero__card-title">Blog title goes here</h3>
+
+            <a href="#" class="hero__card-link">
+              Read more <img src="assets/icons/panah-right.svg" alt="" />
+            </a>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- SECTION CTA END -->
+      </section>
+      <!-- SECTION HERO END -->
 
-    <!-- FOOTER START -->
-    <footer class="footer">
-      <nav class="footer__nav">
-        <div class="footer__background">
-          <img src="assets/img/vector_bottom.png" alt="" />
+      <!-- SECTION BLOG START -->
+      <section class="blog">
+        <div class="blog__container">
+          <div class="blog__header">
+            <div class="blog__categories-wrapper">
+              <ul class="blog__categories">
+                <li class="blog__item">
+                  <a href="#" class="blog__link-all">All</a>
+                </li>
+                <li class="blog__item">
+                  <a href="#" class="blog__link">Product update</a>
+                </li>
+                <li class="blog__item">
+                  <a href="#" class="blog__link">Product tutorials</a>
+                </li>
+                <li class="blog__item">
+                  <a href="#" class="blog__link">General articles</a>
+                </li>
+                <li class="blog__item">
+                  <a href="#" class="blog__link">General articles</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="blog__search">
+              <input type="text" placeholder="Search blog" />
+            </div>
+          </div>
+
+          <!-- CARD CONTENT -->
+          <div class="blog__content">
+            <!-- CARD 1 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-3.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-1.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-2.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-1.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-2.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-3.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-3.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-2.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="blog__content-card">
+              <img
+                src="assets/img/card-1.png"
+                alt="Blog Header"
+                class="blog__content-card-img"
+              />
+              <h3 class="blog__content-card-title">Blog title goes here</h3>
+              <p class="blog__content-card-description">
+                Sometimes it’s nice to put in text just to get an idea of how
+                text will fill in a space on your website.
+              </p>
+              <p class="blog__content-card-meta">
+                <span>Feb 14, 2025</span>
+                <span>&bull;</span>
+                <span>5 min read</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="load_more-btn">
+            <a href="#" class="load_more-btn__style">Load more</a>
+          </div>
         </div>
-        <div class="cta__words cta__words--footer">
-          <h1 class="cta__title">
-            Get started for free in less than 10 minutes
-          </h1>
-          <p class="cta__paragraph">
-            You'll have full access to the Zocks platform, with help from our
-            team, to make sure you get the most out of your experience. Book a
-            discussion with our product experts to see how Zocks can be tailored
-            to your practice's needs.
+      </section>
+      <!-- SECTION BLOG END -->
+
+      <!-- SECTION BRAND START -->
+      <section class="brands">
+        <div class="brands__container">
+          <p class="brands__text">
+            Leading financial advisors, firms, and enterprises choose
+            <span>Zocks AI Meeting Assistant</span> for unrivaled note-taking
+            accuracy, client insights, customization and compliance
           </p>
+          <div class="brands__company-logos">
+            <div class="brands__track">
+              <img
+                src="assets/img/image_(3).png"
+                alt=""
+                class="company-logos"
+              />
+              <img src="assets/img/image_50.png" alt="" class="company-logos" />
+              <img src="assets/img/image_51.png" alt="" class="company-logos" />
+              <img src="assets/img/image_58.png" alt="" class="company-logos" />
+              <img src="assets/img/image_55.png" alt="" class="company-logos" />
+              <img src="assets/img/image_54.png" alt="" class="company-logos" />
+              <img src="assets/img/image_56.png" alt="" class="company-logos" />
+              <img src="assets/img/image_57.png" alt="" class="company-logos" />
 
-          <div class="cta__buttons">
-            <a href="#" class="cta__buttons__start">Start your free trial</a>
-            <a href="#" class="cta__buttons__demo">Book a demo</a>
-          </div>
-
-          <div class="cta__bottom">
-            <img src="assets/icons/vector_14.svg" alt="" />
-            <span>30-day free trial</span>
-          </div>
-        </div>
-
-        <!-- COLUMN 1 -->
-        <div class="footer__column">
-          <details class="footer__details" name="footer-accordion">
-            <summary class="footer__title">Platform</summary>
-
-            <ul class="footer__list">
-              <li>
-                <a href="#" class="footer__link"
-                  >Client insights and intelligence</a
-                >
-              </li>
-              <li><a href="#" class="footer__link">Privacy and security</a></li>
-              <li><a href="#" class="footer__link">Compliance</a></li>
-              <li><a href="#" class="footer__link">Customization</a></li>
-              <li><a href="#" class="footer__link">Team collaboration</a></li>
-              <li>
-                <a href="#" class="footer__link">Zocks for Enterprises</a>
-              </li>
-              <li><a href="#" class="footer__link">ROI</a></li>
-              <li><a href="#" class="footer__link">Pricing</a></li>
-            </ul>
-          </details>
-        </div>
-
-        <!-- COLUMN 2 -->
-        <div class="footer__column">
-          <details class="footer__details" name="footer-accordion">
-            <summary class="footer__title">Features</summary>
-
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">Note-taking</a></li>
-              <li><a href="#" class="footer__link">Meeting preparation</a></li>
-              <li><a href="#" class="footer__link">Form fill</a></li>
-              <li><a href="#" class="footer__link">Client emails</a></li>
-              <li><a href="#" class="footer__link">CRM integration</a></li>
-              <li>
-                <a href="#" class="footer__link">Client profile management</a>
-              </li>
-            </ul>
-          </details>
-        </div>
-
-        <!-- COLUMN 3 -->
-        <div class="footer__column">
-          <details class="footer__details" name="footer-accordion">
-            <summary class="footer__title">Integrations</summary>
-
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">Meetings</a></li>
-              <li><a href="#" class="footer__link">Email integration</a></li>
-              <li><a href="#" class="footer__link">Calendar integration</a></li>
-              <li><a href="#" class="footer__link">CRM integration</a></li>
-            </ul>
-          </details>
-        </div>
-
-        <!-- COLUMN 4 -->
-        <div class="footer__column">
-          <details class="footer__details" name="footer-accordion">
-            <summary class="footer__title">Resources</summary>
-
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">Blog</a></li>
-              <li><a href="#" class="footer__link">Conferences</a></li>
-              <li><a href="#" class="footer__link">Case studies</a></li>
-              <li>
-                <a href="#" class="footer__link">Downloadable materials</a>
-              </li>
-              <li><a href="#" class="footer__link">Zocks help center</a></li>
-              <li><a href="#" class="footer__link">Press</a></li>
-            </ul>
-          </details>
-        </div>
-
-        <!-- COLUMN 5 -->
-        <div class="footer__column">
-          <details class="footer__details" name="footer-accordion">
-            <summary class="footer__title">Company</summary>
-
-            <ul class="footer__list">
-              <li><a href="#" class="footer__link">About us</a></li>
-              <li><a href="#" class="footer__link">Careers</a></li>
-              <li><a href="#" class="footer__link">Contact us</a></li>
-            </ul>
-          </details>
-
-          <h3 class="footer__title footer__title--social">Follow us</h3>
-
-          <div class="footer__social">
-            <a href="#" class="footer__social-logo">
-              <img src="assets/icons/Facebook.svg" alt="Facebook" />
-            </a>
-            <a href="#" class="footer__social-logo">
-              <img src="assets/icons/LinkedIn.svg" alt="Linkedin" />
-            </a>
-            <a href="#" class="footer__social-logo">
-              <img src="assets/icons/X.svg" alt="X" />
-            </a>
+              <img
+                src="assets/img/image_(3).png"
+                alt=""
+                class="company-logos"
+              />
+              <img src="assets/img/image_50.png" alt="" class="company-logos" />
+              <img src="assets/img/image_51.png" alt="" class="company-logos" />
+              <img src="assets/img/image_58.png" alt="" class="company-logos" />
+              <img src="assets/img/image_55.png" alt="" class="company-logos" />
+              <img src="assets/img/image_54.png" alt="" class="company-logos" />
+              <img src="assets/img/image_56.png" alt="" class="company-logos" />
+              <img src="assets/img/image_57.png" alt="" class="company-logos" />
+            </div>
           </div>
         </div>
-      </nav>
+      </section>
+      <!-- SECTION BRAND END -->
 
-      <!-- FOOTER BOTTOM LOGO & LEGAL -->
-      <div class="footer__bottom">
-        <div class="footer__logo">
-          <img src="assets/icons/logo_bottom.svg" alt="Zocks White" />
+      <!-- SECTION CTA START -->
+      <section class="cta">
+        <div class="cta__background-desktop">
+          <img src="assets/icons/vector_cta.svg" alt="" />
         </div>
-        <div class="footer__legal">
-          <div class="footer__legal-policy">
-            <p>Privacy policy</p>
-            <p>Terms of service</p>
+        <div class="cta__background-mobile">
+          <img src="assets/icons/vector_mobile.svg" alt="" />
+        </div>
+
+        <div class="cta__content">
+          <div class="cta__words">
+            <h1 class="cta__title">
+              Get started for free in less than 10 minutes
+            </h1>
+            <p class="cta__paragraph">
+              You'll have full access to the Zocks platform, with help from our
+              team, to make sure you get the most out of your experience. Book a
+              discussion with our product experts to see how Zocks can be
+              tailored to your practice's needs.
+            </p>
+
+            <div class="cta__buttons">
+              <a href="#" class="cta__buttons__start">Start your free trial</a>
+              <a href="#" class="cta__buttons__demo">Book a demo</a>
+            </div>
+
+            <div class="cta__bottom">
+              <img src="assets/icons/vector_14.svg" alt="" />
+              <span>30-day free trial</span>
+            </div>
           </div>
-          <div class="footer__legal-wm">
-            <p>© Zocks 2025. All rights reserved</p>
+
+          <div class="cta__right">
+            <div class="cta__right__image">
+              <img
+                src="assets/img/cta(1).png"
+                alt=""
+                class="image__desktop__1"
+              />
+              <img
+                src="assets/img/cta(2).png"
+                alt=""
+                class="image__desktop__3"
+              />
+              <img
+                src="assets/img/cta(3).png"
+                alt=""
+                class="image__desktop__2"
+              />
+              <img
+                src="assets/img/cta_mobile-1.png"
+                alt=""
+                class="image__mobile__1"
+              />
+              <img
+                src="assets/img/cta_mobile-2.png"
+                alt=""
+                class="image__mobile__3"
+              />
+              <img
+                src="assets/img/cta_mobile-3.png"
+                alt=""
+                class="image__mobile__2"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- FOOTER END  -->
+      </section>
+      <!-- SECTION CTA END -->
+
+      <!-- FOOTER START -->
+      <footer class="footer">
+        <nav class="footer__nav">
+          <div class="footer__background">
+            <img src="assets/img/vector_bottom.png" alt="" />
+          </div>
+          <div class="cta__words cta__words--footer">
+            <h1 class="cta__title">
+              Get started for free in less than 10 minutes
+            </h1>
+            <p class="cta__paragraph">
+              You'll have full access to the Zocks platform, with help from our
+              team, to make sure you get the most out of your experience. Book a
+              discussion with our product experts to see how Zocks can be
+              tailored to your practice's needs.
+            </p>
+
+            <div class="cta__buttons">
+              <a href="#" class="cta__buttons__start">Start your free trial</a>
+              <a href="#" class="cta__buttons__demo">Book a demo</a>
+            </div>
+
+            <div class="cta__bottom">
+              <img src="assets/icons/vector_14.svg" alt="" />
+              <span>30-day free trial</span>
+            </div>
+          </div>
+
+          <!-- COLUMN 1 -->
+          <div class="footer__column">
+            <details class="footer__details" name="footer-accordion">
+              <summary class="footer__title">Platform</summary>
+
+              <ul class="footer__list">
+                <li>
+                  <a href="#" class="footer__link"
+                    >Client insights and intelligence</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__link">Privacy and security</a>
+                </li>
+                <li><a href="#" class="footer__link">Compliance</a></li>
+                <li><a href="#" class="footer__link">Customization</a></li>
+                <li><a href="#" class="footer__link">Team collaboration</a></li>
+                <li>
+                  <a href="#" class="footer__link">Zocks for Enterprises</a>
+                </li>
+                <li><a href="#" class="footer__link">ROI</a></li>
+                <li><a href="#" class="footer__link">Pricing</a></li>
+              </ul>
+            </details>
+          </div>
+
+          <!-- COLUMN 2 -->
+          <div class="footer__column">
+            <details class="footer__details" name="footer-accordion">
+              <summary class="footer__title">Features</summary>
+
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Note-taking</a></li>
+                <li>
+                  <a href="#" class="footer__link">Meeting preparation</a>
+                </li>
+                <li><a href="#" class="footer__link">Form fill</a></li>
+                <li><a href="#" class="footer__link">Client emails</a></li>
+                <li><a href="#" class="footer__link">CRM integration</a></li>
+                <li>
+                  <a href="#" class="footer__link">Client profile management</a>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+          <!-- COLUMN 3 -->
+          <div class="footer__column">
+            <details class="footer__details" name="footer-accordion">
+              <summary class="footer__title">Integrations</summary>
+
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Meetings</a></li>
+                <li><a href="#" class="footer__link">Email integration</a></li>
+                <li>
+                  <a href="#" class="footer__link">Calendar integration</a>
+                </li>
+                <li><a href="#" class="footer__link">CRM integration</a></li>
+              </ul>
+            </details>
+          </div>
+
+          <!-- COLUMN 4 -->
+          <div class="footer__column">
+            <details class="footer__details" name="footer-accordion">
+              <summary class="footer__title">Resources</summary>
+
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">Blog</a></li>
+                <li><a href="#" class="footer__link">Conferences</a></li>
+                <li><a href="#" class="footer__link">Case studies</a></li>
+                <li>
+                  <a href="#" class="footer__link">Downloadable materials</a>
+                </li>
+                <li><a href="#" class="footer__link">Zocks help center</a></li>
+                <li><a href="#" class="footer__link">Press</a></li>
+              </ul>
+            </details>
+          </div>
+
+          <!-- COLUMN 5 -->
+          <div class="footer__column">
+            <details class="footer__details" name="footer-accordion">
+              <summary class="footer__title">Company</summary>
+
+              <ul class="footer__list">
+                <li><a href="#" class="footer__link">About us</a></li>
+                <li><a href="#" class="footer__link">Careers</a></li>
+                <li><a href="#" class="footer__link">Contact us</a></li>
+              </ul>
+            </details>
+
+            <h3 class="footer__title footer__title--social">Follow us</h3>
+
+            <div class="footer__social">
+              <a href="#" class="footer__social-logo">
+                <img src="assets/icons/Facebook.svg" alt="Facebook" />
+              </a>
+              <a href="#" class="footer__social-logo">
+                <img src="assets/icons/LinkedIn.svg" alt="Linkedin" />
+              </a>
+              <a href="#" class="footer__social-logo">
+                <img src="assets/icons/X.svg" alt="X" />
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- FOOTER BOTTOM LOGO & LEGAL -->
+        <div class="footer__bottom">
+          <div class="footer__logo">
+            <img src="assets/icons/logo_bottom.svg" alt="Zocks White" />
+          </div>
+          <div class="footer__legal">
+            <div class="footer__legal-policy">
+              <p>Privacy policy</p>
+              <p>Terms of service</p>
+            </div>
+            <div class="footer__legal-wm">
+              <p>© Zocks 2025. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END  -->
+    </div>
   </body>
 </html>
