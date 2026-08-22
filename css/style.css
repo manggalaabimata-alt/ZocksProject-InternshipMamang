@@ -26,12 +26,12 @@ body {
   top: 0;
   z-index: 1000;
   background-color: #FFFFFF;
+  padding: 2.4rem 10rem;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 6.25rem;
   margin: 0 auto;
   max-width: 124rem;
 }
@@ -114,7 +114,7 @@ body {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.6rem;
   background-color: #7D53EB;
   color: #FFFFFF;
   cursor: pointer;
@@ -130,6 +130,7 @@ body {
     top: 0;
     z-index: 1000;
     background-color: #f1ecff;
+    padding: 0;
   }
   .navbar {
     flex-direction: column;
@@ -261,6 +262,7 @@ body {
   padding: 7rem 0;
   max-width: 57.7rem;
   gap: 2rem;
+  margin-left: 3rem;
 }
 .hero__badge {
   display: inline-flex;
@@ -373,9 +375,8 @@ body {
     text-align: center;
     background: linear-gradient(to bottom, #e8dfff, rgba(232, 223, 255, 0));
     border-radius: 1.5rem;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-    padding-top: 2rem;
+    padding-top: 5rem;
+    margin: 0 0.5rem;
   }
   .hero__badge {
     padding: 0.8rem 1.2rem;
@@ -392,19 +393,22 @@ body {
   }
   .hero__description {
     font-size: 1.6rem;
-    padding: 0 1.2rem;
-    margin: 4.5rem 0.5rem;
+    margin: 0 1.5rem;
+    padding-bottom: 2rem;
   }
   .hero__card {
     max-width: 90%;
     margin: 0 auto;
   }
   .hero .btn-primary {
-    display: inline-block;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
     max-width: 30rem;
-    padding: 1.4rem 2.4rem;
+    height: 4.8rem;
     box-sizing: border-box;
+    margin: 0 auto;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -590,10 +594,10 @@ body {
   }
   .blog__content-card-title {
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .blog__content-card-description {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .blog__card {
     width: 100%;
@@ -602,8 +606,8 @@ body {
     margin: 5rem 0;
   }
   .blog .load_more-btn__style {
-    font-size: 1.3rem;
-    padding: 1.3rem;
+    font-size: 1.6rem;
+    padding: 1.6rem 2rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -639,12 +643,14 @@ body {
 .brands__container {
   width: 100%;
   margin: 0 auto;
+  margin-top: 10rem;
 }
 .brands__text {
   font-weight: 700;
   font-size: 2rem;
   color: #2E1952;
   text-align: center;
+  margin: 0 26rem;
 }
 .brands__text span {
   color: #7D53EB;
@@ -688,7 +694,7 @@ body {
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 2rem;
   }
   .brands__company-logos {
@@ -849,6 +855,7 @@ body {
   .cta {
     padding: 0;
     max-height: none;
+    margin-top: 0;
   }
   .cta__background-desktop {
     display: none;
@@ -877,13 +884,14 @@ body {
     width: 100%;
     font-size: 1.45rem;
     letter-spacing: -0.2px;
+    padding-right: 0.3rem;
   }
   .cta__content {
     flex-direction: column;
   }
   .cta__words {
     width: 100%;
-    padding: 4rem 2.5rem;
+    padding: 4rem 2rem;
   }
   .cta__right {
     width: 100%;
@@ -905,16 +913,19 @@ body {
     right: 0;
   }
   .cta__right__image .image__mobile__2 {
-    bottom: 2rem;
+    bottom: 1rem;
     left: 0;
   }
   .cta__right__image .image__mobile__3 {
-    top: 2rem;
+    bottom: 11rem;
     right: 0;
   }
   .cta__buttons {
     flex-direction: column;
     text-align: center;
+  }
+  .cta__buttons a {
+    justify-content: center;
   }
   .cta__bottom {
     display: none;

@@ -195,6 +195,7 @@
   .cta {
     padding: 0;
     max-height: none;
+    margin-top: 0;
 
     &__background {
       &-desktop {
@@ -232,6 +233,7 @@
       width: 100%;
       font-size: 1.45rem;
       letter-spacing: -0.2px;
+      padding-right: .3rem;
     }
 
     &__content {
@@ -240,7 +242,7 @@
 
     &__words {
       width: 100%;
-      padding: 4rem 2.5rem;
+      padding: 4rem 2rem;
     }
 
     &__right {
@@ -272,12 +274,12 @@
           }
 
           &__2 {
-            bottom: 2rem;
+            bottom: 1rem;
             left: 0;
           }
 
           &__3 {
-            top: 2rem;
+            bottom: 11rem;
             right: 0;
           }
         }
@@ -287,6 +289,10 @@
     &__buttons {
       flex-direction: column;
       text-align: center;
+
+      a {
+        justify-content: center;
+      }
     }
 
     &__bottom {
