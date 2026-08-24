@@ -74,6 +74,13 @@
 
     &-close {
       display: none;
+      align-items: center;
+      gap: 0.5rem;
+
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: -0.2px;
     }
   }
 
@@ -137,6 +144,11 @@
 // MOBILE
 
 @media (max-width: 768px) {
+  body {
+    &:has(.navbar__checkbox:checked) {
+      background-color: #f1ecff;
+    }
+  }
   .header {
     position: sticky;
     top: 0;
@@ -153,6 +165,8 @@
     height: 9.6rem;
     gap: 2.4rem;
 
+    --menu-top: 7rem;
+
     &__top {
       width: 100%;
       justify-content: space-between;
@@ -168,15 +182,19 @@
       align-items: stretch;
 
       gap: 2.4rem;
-      margin: 3rem 0 0;
+      margin: 0 2rem;
+      margin-top: 2rem;
       padding: 2rem;
 
       position: fixed;
-      inset: 7rem 0 0 0;
-      min-height: calc(100vh - 7rem);
+      top: var(--menu-top);
+      left: 0;
+      right: 0;
+      bottom: 1rem;
 
       background-color: #fff;
-      border-radius: 0.75rem;
+      border-radius: 1.2rem;
+      overflow-y: auto;
     }
 
     &__menu {
@@ -194,9 +212,15 @@
       padding: 2rem 5rem;
 
       position: fixed;
-      inset: auto 0 0 0;
+      left: 0;
+      right: 0;
+      bottom: 2rem;
 
       text-align: center;
+
+      .btn-login {
+        justify-content: center;
+      }
     }
 
     &__toggle {
@@ -237,7 +261,7 @@
     }
 
     .navbar__toggle-close {
-      display: inline;
+      display: flex;
     }
   }
 }

@@ -33,6 +33,10 @@
     z-index: -1;
   }
 
+  &__divider {
+    display: none;
+  }
+
   &__column {
     display: flex;
     flex-direction: column;
@@ -210,9 +214,11 @@
     width: 100%;
   }
 
-  .cta__title h1 {
-    font-size: 2.5rem;
-    line-height: 1.15;
+  h1.cta__title-footer {
+    font-size: 2.8rem;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+    font-weight: 700;
   }
 
   .footer__details summary::after {
@@ -230,33 +236,64 @@
   .footer {
     padding: 2.5rem;
 
+    &__background {
+      top: 0;
+      right: -3rem;
+    }
+
     &__nav {
       margin: 0;
       flex-direction: column;
+      margin-top: 2rem;
+      gap: 0;
+    }
+
+    &__divider {
+      display: inline;
+      border: 1px solid #ffffff1a;
     }
 
     &__column {
+      display: flex;
+      justify-content: center;
+      align-items: space-between;
       width: 100%;
       gap: 0;
-
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 1.25rem 0;
+      margin: 0 auto;
     }
 
     &__details {
       summary {
-        padding-bottom: 0.5rem;
-        list-style: none;
-        cursor: pointer;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 2.4rem 0;
+
+        line-height: 1;
+        letter-spacing: -0.2px;
+        font-size: 2rem;
+        font-weight: 600;
+
+        list-style: none;
+        cursor: pointer;
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+
+        &::marker {
+          display: none;
+        }
+
+        svg {
+          display: block;
+          flex-shrink: 0;
+        }
 
         &::after {
           content: "";
-          width: 0.6rem;
-          height: 0.6rem;
+          // width: 1.37rem;
+          // height: .75rem;
 
           border-right: 2px solid $color-neutrals-50;
           border-bottom: 2px solid $color-neutrals-50;
@@ -273,6 +310,7 @@
 
       &--social {
         margin: 2rem 0;
+        font-size: 2rem;
       }
     }
 
@@ -295,15 +333,22 @@
       font-weight: 400;
     }
 
+    &__details &__list {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
     // START FROM LOGO
     &__bottom {
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &__logo {
+      margin-bottom: 2rem;
       img {
-        width: 36.3rem;
-        height: 3rem;
+        width: 29.7rem;
+        height: 8rem;
         margin-bottom: 2rem;
       }
     }
@@ -317,6 +362,7 @@
       &-wm {
         text-align: left;
         width: auto;
+        font-size: 1.4rem;
       }
     }
   }
