@@ -82,6 +82,10 @@
   .brands {
     padding: 2.4rem 3rem;
 
+    &__container {
+      margin-top: 0;
+    }
+
     &__text {
       margin: 0 6rem; 
       font-size: 1.6rem;

@@ -269,25 +269,35 @@
 // TABLET
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    margin: 0 auto;
+    padding: 1.2rem 1.6rem;
+  }
+
   .navbar {
-    padding: 1.6rem 2rem;
+    padding: 0;
+
+    &__logo-img {
+      width: 11rem;
+      height: 3rem;
+    }
 
     &__left {
-      gap: 1.6rem;
+      gap: 2.2rem;
     }
 
     &__list {
-      gap: 1.2rem;
+      gap: 0.8rem;
     }
 
     &__menu {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       white-space: nowrap;
     }
 
     &__action {
       flex-shrink: 0;
-      gap: 0.8rem;
+      gap: 0.6rem;
 
       .btn-login {
         flex-shrink: 0;
@@ -298,23 +308,20 @@
         width: 3.6rem;
         height: 3.6rem;
         padding: 0;
+        margin: 0 .5rem;
+        font-size: 1.2rem;
         border-radius: 50%;
         background-color: $color-neutrals-50;
 
         &__icon {
-          width: 1.8rem;
-          height: 1.8rem;
-        }
-
-        &__text {
           display: none;
         }
       }
 
       .btn-start {
         flex-shrink: 0;
-        padding: 0.9rem 1.2rem;
-        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
         white-space: nowrap;
       }
     }

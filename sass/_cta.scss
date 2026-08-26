@@ -161,7 +161,6 @@
         &__2,
         &__3 {
           position: absolute;
-          // visibility: hidden;
         }
 
         &__1 {
@@ -191,6 +190,74 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cta {
+    max-height: none; 
+    padding: 4rem;
+
+    &__content {
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__words {
+      width: 55%; 
+    }
+
+    &__title {
+      font-size: 2.6rem;
+      max-width: 100%;
+    }
+
+    &__paragraph {
+      font-size: 1.3rem;
+      max-width: 100%;
+    }
+
+    &__bottom {
+      margin-left: 1rem;
+
+      img {
+        width: 5rem;
+      }
+
+      span {
+        left: 7rem;
+        top: 2.2rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
+      }
+    }
+
+    &__right {
+      width: 45%;
+
+      &__image {
+        .image__desktop {
+          &__1 {
+            right: -4rem;
+            bottom: -22rem;
+            width: 115%;
+          }
+
+          &__3 {
+            top: -8rem;
+            right: -3rem;
+            width: 60%;
+          }
+
+          &__2 {
+            bottom: -18rem;
+            right: 45%;
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOBILE
 @media (max-width: 768px) {
   .cta {
     padding: 0;
@@ -213,7 +280,7 @@
         height: 100%;
 
         z-index: 1;
-        transform: rotate(-12.08 deg);
+        transform: rotate(-12.08deg);
 
         img {
           height: 100%;
@@ -234,7 +301,7 @@
       width: 100%;
       font-size: 1.45rem;
       letter-spacing: -0.2px;
-      padding-right: .3rem;
+      padding-right: 0.3rem;
     }
 
     &__content {
@@ -260,8 +327,6 @@
         }
 
         .image__mobile {
-          display: block;
-          position: absolute;
           &__1,
           &__2,
           &__3 {
@@ -276,7 +341,7 @@
 
           &__2 {
             bottom: 1rem;
-            left: 0;
+            right: 11rem;
           }
 
           &__3 {
@@ -297,72 +362,6 @@
     }
 
     &__bottom {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .cta {
-    &__content {
-      justify-content: center;
-    }
-
-    &__words {
-      width: 100%;
-      padding: 5rem 3rem;
-      align-items: center;
-      text-align: center;
-    }
-
-    &__title {
-      font-size: 2.2rem;
-    }
-
-    &__paragraph {
-      font-size: 1.25rem;
-      max-width: 40rem;
-    }
-
-    &__buttons {
-      justify-content: center;
-    }
-
-    &__bottom {
-      position: relative;
-
-      margin-top: 1rem;
-      margin-left: -1.5rem;
-
-      height: 4rem;
-      width: max-content;
-
-      color: #fff;
-
-      img {
-        position: absolute;
-
-        width: 5rem;
-
-        left: 1rem;
-        top: 0;
-      }
-
-      span {
-        position: absolute;
-
-        left: 4.4rem;
-        top: 3.8rem;
-        transform: rotate(3.5deg);
-
-        font-size: 1rem;
-        font-weight: 500;
-        line-height: 150%;
-        white-space: nowrap;
-      }
-    }
-
-    &__right {
       display: none;
     }
   }
