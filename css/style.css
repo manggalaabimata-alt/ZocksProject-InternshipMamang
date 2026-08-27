@@ -825,7 +825,6 @@ body {
   overflow: hidden;
   margin: 4rem 2.5rem;
   padding: 7.2rem;
-  max-height: 51.3rem;
   background-color: #7D53EB;
   border-radius: 2.4rem;
 }
@@ -1080,6 +1079,14 @@ body {
   }
   .cta__bottom {
     display: none;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1109px) {
+  .cta__right__image {
+    width: 125%;
+  }
+  .cta__right__image .image__desktop__3 {
+    right: -7rem;
   }
 }
 .footer {
