@@ -68,7 +68,7 @@
     }
 
     &-chevron {
-        color: $color-neutrals-50;
+      color: $color-neutrals-50;
     }
   }
 
@@ -347,6 +347,12 @@
     padding: 3rem 2.5rem;
     min-height: auto;
 
+    &__title {
+      svg {
+        display: none;
+      }
+    }
+
     &__nav {
       margin-right: 0;
       flex-wrap: wrap;
@@ -413,5 +419,11 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1181px) {
-  
+  .footer {
+    &__title {
+      svg {
+        display: none;
+      }
+    }
+  }
 }
