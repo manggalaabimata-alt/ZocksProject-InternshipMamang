@@ -320,6 +320,18 @@ body {
     font-weight: 700;
     cursor: pointer;
   }
+  .navbar__toggle-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1;
+  }
+  .navbar__toggle-close {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1;
+  }
   .navbar__checkbox:checked ~ .navbar__top .navbar__action,
   .navbar__checkbox:checked ~ .navbar__action {
     max-height: 30rem;

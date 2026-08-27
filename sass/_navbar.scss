@@ -386,6 +386,19 @@
       font-size: 1.6rem;
       font-weight: 700;
       cursor: pointer;
+
+      &-menu {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        line-height: 1;
+      }
+      &-close {
+        display: none;
+        align-items: center;
+        gap: 0.5rem;
+        line-height: 1;
+      }
     }
   }
 
