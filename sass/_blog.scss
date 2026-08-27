@@ -275,3 +275,12 @@
     }
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1181px) {
+  .blog {
+
+    &__categories {
+      flex-wrap: wrap;
+    }
+  }
+}

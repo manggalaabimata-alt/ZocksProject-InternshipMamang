@@ -228,6 +228,9 @@
       align-items: center;
       justify-content: center;
 
+      height: 4.8rem;
+      width: 11.1rem;
+
       padding: 1.6rem 2rem;
 
       border: none;
@@ -242,6 +245,8 @@
 
       &-menu {
         display: flex;
+        align-items: center;
+        gap: 8px;
 
         &-hamburger {
           margin-right: 0.5rem;
@@ -262,6 +267,7 @@
 
     .navbar__toggle-close {
       display: flex;
+      gap: 8px;
     }
   }
 }
@@ -275,7 +281,7 @@
   }
 
   .navbar {
-    padding: 0;
+    padding: 0 2rem;
 
     &__logo-img {
       width: 11rem;
@@ -308,7 +314,7 @@
         width: 3.6rem;
         height: 3.6rem;
         padding: 0;
-        margin: 0 .5rem;
+        margin: 0 0.5rem;
         font-size: 1.2rem;
         border-radius: 50%;
         background-color: $color-neutrals-50;
@@ -324,6 +330,76 @@
         font-size: 1.2rem;
         white-space: nowrap;
       }
+    }
+  }
+}
+
+// KHUSUSONNN
+
+@media (min-width: 1025px) and (max-width: 1181px) {
+  .navbar {
+    justify-content: center;
+
+    &__top {
+      flex: none;
+      align-items: center;
+      gap: 2rem;
+    }
+    
+    &__action {
+      position: absolute;
+      top: 100%;
+      z-index: 999;
+
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.8rem;
+
+      width: auto;
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 1.2rem;
+
+      background-color: #fff;
+      border-radius: 0.8rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    &__toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 4.8rem;
+      width: 11.1rem;
+      padding: 1.6rem 2rem;
+
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $color-violet-500;
+      color: white;
+
+      font-size: 1.6rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+
+  .navbar__checkbox:checked ~ .navbar__top .navbar__action,
+  .navbar__checkbox:checked ~ .navbar__action {
+    max-height: 30rem;
+    padding: 1.2rem;
+  }
+
+  .navbar__checkbox:checked ~ .navbar__top {
+    .navbar__toggle-menu {
+      display: none;
+    }
+    .navbar__toggle-close {
+      display: flex;
+      gap: 8px;
     }
   }
 }
