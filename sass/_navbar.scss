@@ -48,13 +48,10 @@
   }
 
   &__item:hover &__menu {
-    color: $color-violet-600;
-    transition: color 0.2s linear;
-  }
-
-  &__item:active &__menu {
-    color: $color-violet-300;
-    transition: color 0.1s linear;
+    color: $color-violet-900;
+    font-weight: 700;
+    transition: color 0.5s ease;
+    border-bottom: 1.2px solid $color-violet-900;
   }
 
   &__menu {
@@ -63,6 +60,7 @@
 
     text-decoration: none;
     color: $color-violet-900;
+    letter-spacing: -0.2%;
 
     font-size: 1.6rem;
     font-weight: 500;

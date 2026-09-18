@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 5rem;
+  padding: 7.2rem;
 
   border-radius: 2.4rem;
 
@@ -13,10 +13,10 @@
   height: 100%;
 
   margin: 0 2.5rem;
+  margin-top: 2.4rem;
   margin-bottom: 7rem;
 
   &__content {
-    padding: 7rem 0;
     max-width: 57.7rem;
     gap: 2rem;
     margin-left: 3rem;
@@ -83,6 +83,12 @@
     font-size: 1.6rem;
     background-color: $color-button-primary-bg-1;
     color: $color-button-primary-text-1;
+
+    transition: background-color 0.25s ease;
+
+    &:hover {
+      background-color: $color-violet-800;
+    }
   }
 
   //  CONTENT KANAN
@@ -91,17 +97,15 @@
     background-color: #fff;
     border-radius: 1.6rem;
     padding: 8px;
-    padding-bottom: 1.6rem;
-    margin-top: 8rem;
-    margin-right: 4rem;
+    margin-right: 2rem;
 
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 8px 0px #1616160A;
   }
 
   &__card-img {
     display: block;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 1.6rem;
     margin: 0 auto;
   }
 
@@ -112,7 +116,7 @@
   }
 
   &__card-content {
-    padding: 2.4rem;
+    padding: 1.6rem;
   }
 
   &__card-meta {
@@ -189,7 +193,7 @@
     &__description {
       font-size: 1.6rem;
       margin: 0 1.5rem;
-      padding-bottom: 2rem; 
+      padding-bottom: 2rem;
     }
 
     &__card {
