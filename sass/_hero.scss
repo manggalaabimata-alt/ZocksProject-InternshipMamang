@@ -152,10 +152,10 @@
     text-decoration: none;
 
     transition: 0.3s ease;
-  }
 
-  &__card-link:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
