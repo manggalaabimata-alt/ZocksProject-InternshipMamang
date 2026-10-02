@@ -10,7 +10,7 @@ tabButtons.forEach(function (button) {
 
         tabContents.forEach(function (content) {
             content.classList.remove('active');
-            content.style.display = '';  // <- ini WAJIB, buang inline style lama
+            content.style.display = ''; 
         });
 
         const tabName = button.dataset.tab;

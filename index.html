@@ -21,7 +21,12 @@
       <!-- SECTION NAVBAR START -->
       <header class="header">
         <nav class="navbar">
-          <input type="checkbox" id="navbar-toggle" class="navbar__checkbox" hidden>
+          <input
+            type="checkbox"
+            id="navbar-toggle"
+            class="navbar__checkbox"
+            hidden
+          />
           <!-- LOGO -->
           <div class="navbar__top">
             <div class="navbar__left">
@@ -39,7 +44,12 @@
                   class="navbar__item navbar__item--mega"
                   data-mega="platform"
                 >
-                <input type="checkbox" id="mega-platform" class="navbar__item-check" hidden />
+                  <input
+                    type="checkbox"
+                    id="mega-platform"
+                    class="navbar__item-check"
+                    hidden
+                  />
                   <a href="#" class="navbar__menu">
                     Platform
                     <svg
@@ -54,7 +64,6 @@
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
                   <!-- ========================= -->
                   <!-- === PLATFORM MEGA MENU ===-->
                   <!-- ========================= -->
@@ -275,7 +284,13 @@
                 <!-- ========================= -->
 
                 <li class="navbar__item">
-                  <a href="#" class="navbar__menu">
+                  <input
+                    type="checkbox"
+                    id="mega-features"
+                    class="navbar__item-check"
+                    hidden
+                  />
+                  <label for="mega-features" class="navbar__menu" visible>
                     Features
                     <svg
                       width="16"
@@ -289,7 +304,7 @@
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </label>
                   <!-- ========================= -->
                   <!-- === FEATURES MEGA MENU == -->
                   <!-- ========================= -->
@@ -493,7 +508,13 @@
                 <!-- ========================= -->
 
                 <li class="navbar__item">
-                  <a href="#" class="navbar__menu">
+                  <input
+                    type="checkbox"
+                    id="mega-integrations"
+                    class="navbar__item-check"
+                    hidden
+                  />
+                  <label for="mega-integrations" class="navbar__menu">
                     Integrations
                     <svg
                       width="16"
@@ -507,11 +528,9 @@
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </label>
                   <!-- TAB -->
-                  <div
-                    class="navbar__megaIR navbar__megaIR-Integrations visible"
-                  >
+                  <div class="navbar__megaIR navbar__megaIR-Integrations">
                     <div class="navbar__megaIR-main">
                       <div class="navbar__megaIR-main-content-left">
                         <ul>
@@ -759,7 +778,9 @@
 
                       <!-- CRMS -->
                       <div class="tab-content" data-content="crms">
-                        <div class="navbar__megaIR-main-content-right navbar__megaIR-Integrations-CRMs">
+                        <div
+                          class="navbar__megaIR-main-content-right navbar__megaIR-Integrations-CRMs"
+                        >
                           <div class="navbar__megaIR-main-content-right-top">
                             <div
                               class="navbar__megaIR-main-content-right-top-title"
@@ -776,7 +797,10 @@
                                 class="navbar__megaIR-main-content-right-top-content-photo"
                               >
                                 <div class="navbar__megaIR-Integrations-icon">
-                                  <img src="assets/mega_menu/integrations/CRMs/wealthbox.png" alt="">
+                                  <img
+                                    src="assets/mega_menu/integrations/CRMs/wealthbox.png"
+                                    alt=""
+                                  />
                                 </div>
 
                                 <div
@@ -784,7 +808,9 @@
                                 >
                                   <h5>Wealthbox</h5>
                                   <span
-                                    >Keep client records updated effortlessly with seamless note syncing and task automation.</span
+                                    >Keep client records updated effortlessly
+                                    with seamless note syncing and task
+                                    automation.</span
                                   >
                                 </div>
                               </div>
@@ -792,7 +818,10 @@
                                 class="navbar__megaIR-main-content-right-top-content-photo"
                               >
                                 <div class="navbar__megaIR-Integrations-icon">
-                                  <img src="assets/mega_menu/integrations/CRMs/salesforce.png" alt="">
+                                  <img
+                                    src="assets/mega_menu/integrations/CRMs/salesforce.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div
                                   class="navbar__megaIR-main-content-right-top-content-photo-text"
@@ -809,7 +838,10 @@
                                 class="navbar__megaIR-main-content-right-top-content-photo"
                               >
                                 <div class="navbar__megaIR-Integrations-icon">
-                                   <img src="assets/mega_menu/integrations/CRMs/redtail.png" alt="">
+                                  <img
+                                    src="assets/mega_menu/integrations/CRMs/redtail.png"
+                                    alt=""
+                                  />
                                 </div>
                                 <div
                                   class="navbar__megaIR-main-content-right-top-content-photo-text"
@@ -884,7 +916,13 @@
                 <!--    RESOURCES MEGA MENU    -->
                 <!-- ========================= -->
                 <li class="navbar__item">
-                  <a href="#" class="navbar__menu">
+                  <input
+                    type="checkbox"
+                    id="mega-resources"
+                    class="navbar__item-check"
+                    hidden
+                  />
+                  <label for="mega-resources" class="navbar__menu">
                     Resources
                     <svg
                       width="16"
@@ -898,7 +936,7 @@
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </label>
                   <!-- TAB -->
                   <div class="navbar__megaIR navbar__megaIR-Resources">
                     <div class="navbar__megaIR-main">
@@ -1200,14 +1238,23 @@
                     <!-- TAB CONTENT END -->
                   </div>
                 </li>
-                <div class="navbar__action navbar__item--cta">
-            <a href="#" class="btn-login">
-              <span class="btn-login__text">Login</span>
-            </a>
+                <!-- BUTTON UNTUK MOBILE -->
+                <div class="navbar__item--cta">
+                  <a href="#" class="btn-login">
+                    <span class="btn-login__text">Login</span>
+                  </a>
 
-            <a href="#" class="btn-start">Start your free trial</a>
-          </div>
+                  <a href="#" class="btn-start">Start your free trial</a>
+                </div>
               </ul>
+              <!-- BUTTON UNTUK DESKTOP -->
+              <div class="navbar__action">
+                <a href="#" class="btn-login">
+                  <span class="btn-login__text">Login</span>
+                </a>
+
+                <a href="#" class="btn-start">Start your free trial</a>
+              </div>
             </div>
 
             <label for="navbar-toggle" class="navbar__toggle">

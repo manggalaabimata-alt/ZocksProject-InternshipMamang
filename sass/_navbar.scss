@@ -34,13 +34,14 @@
   &__top {
     display: flex;
     align-items: center;
-    flex: 1;
+    width: 100%;
   }
 
   &__left {
     display: flex;
     align-items: center;
     gap: 3.2rem;
+    width: 100%;
   }
 
   &__logo {
@@ -76,15 +77,17 @@
     letter-spacing: -0.01em;
   }
 
-  &__menu::after {
-    content: "";
-    width: 0;
-    height: 2px;
-    background: $color-violet-900;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 0.5s;
+  @media (min-width: 769px) {
+    &__menu::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background: $color-violet-900;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: 0.5s;
+    }
   }
 
   &__item:hover &__menu::after {
@@ -863,6 +866,7 @@
     display: flex;
     align-items: center;
     gap: 1.2rem;
+    margin-left: auto;
 
     .btn-login {
       display: flex;
@@ -937,8 +941,8 @@
   }
 
   .navbar {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
     padding: 1.6rem 2rem;
     height: 9.6rem;
     gap: 2.4rem;
@@ -1086,10 +1090,23 @@
         }
       }
 
-      &-main-content-right-top-content {
-        flex-direction: column;
-        max-height: none;
-        width: 100%;
+      &-main-content {
+        &-left {
+          margin-top: 1.5rem;
+        }
+        &-right-top-content {
+          flex-direction: column;
+          max-height: none;
+          width: 100%;
+        }
+
+        &-text {
+          display: flex;
+          gap: 3rem;
+          margin: 0 auto;
+          height: auto;
+          width: auto;
+        }
       }
     }
 
@@ -1246,6 +1263,40 @@
       height: auto;
       border-radius: 0;
     }
+
+    &__megaPF {
+      &-main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-left {
+        &-bottom {
+          &-grid {
+            grid-template-columns: auto;
+            row-gap: 1.2rem;
+          }
+        }
+      }
+
+      &-right {
+        display: none;
+      }
+
+      &-footer {
+        flex-direction: column;
+        gap: 2rem;
+
+        &-right {
+          flex-direction: column-reverse;
+
+          &-btnBook {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 
   .navbar__checkbox:checked ~ .navbar__top .navbar__list,
@@ -1263,19 +1314,15 @@
       gap: 8px;
     }
   }
-
-  // tombol asli di dasar layar tidak dipakai lagi di HP
   .navbar__checkbox:checked ~ .navbar__action {
     display: none;
   }
 
-  // kartu menu kembali ke ukuran normal
   .navbar__top .navbar__list {
     bottom: 2rem;
     padding-bottom: 0;
   }
 
-  // salinan tombol: di dalam kartu, menempel di dasarnya
   .navbar__item--cta {
     display: flex;
     flex-direction: column;
@@ -1289,9 +1336,81 @@
     background-color: #fff;
 
     .btn-login {
+      display: flex;
       justify-content: center;
+
+      padding: 4px 0 4px 0;
+
+      text-decoration: none;
+      color: $button-flat-text-1;
+      background-color: $button-flat-bg;
+      border: none;
+
+      font-weight: bold;
+      font-size: 1.6rem;
+
+      &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: $color-violet-500;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        transition: 0.5s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    .btn-start {
+      padding: 1.6rem 2rem;
+
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+
+      font-weight: bold;
+      font-size: 1.6rem;
+
+      background-color: $color-button-primary-bg-1;
+      color: $color-button-primary-text-1;
+
+      cursor: pointer;
+
+      transition: background-color 0.25s ease;
+
+      &:hover {
+        background-color: $color-violet-800;
+      }
     }
   }
+
+  // mengatur panel yg lagi tampil
+  .navbar__item-check:checked ~ .navbar__megaPF,
+  .navbar__item-check:checked ~ .navbar__megaIR {
+    display: block;
+    transform: none;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar__item-check:checked ~ .navbar__menu {
+    color: $color-violet-500;
+    font-weight: 600;
+  }
+
+  .navbar__item-check:checked ~ .navbar__menu svg {
+  transform: rotate(180deg);
+}
+
+.navbar__item-check:not(:checked) ~ .navbar__menu svg {
+  transform: rotate(0deg);
+}
 }
 
 // TABLET

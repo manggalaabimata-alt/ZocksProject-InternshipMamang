@@ -48,12 +48,13 @@ body {
 .navbar__top {
   display: flex;
   align-items: center;
-  flex: 1;
+  width: 100%;
 }
 .navbar__left {
   display: flex;
   align-items: center;
   gap: 3.2rem;
+  width: 100%;
 }
 .navbar__logo {
   display: flex;
@@ -82,15 +83,17 @@ body {
   transition: color 0.1s all;
   letter-spacing: -0.01em;
 }
-.navbar__menu::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background: #2E1952;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.5s;
+@media (min-width: 769px) {
+  .navbar__menu::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #2E1952;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+  }
 }
 .navbar__item:hover .navbar__menu::after {
   width: 100%;
@@ -689,6 +692,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  margin-left: auto;
 }
 .navbar__action .btn-login {
   display: flex;
@@ -743,8 +747,8 @@ body {
     padding: 0;
   }
   .navbar {
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
     padding: 1.6rem 2rem;
     height: 9.6rem;
     gap: 2.4rem;
@@ -864,10 +868,20 @@ body {
   .navbar__megaPF-main-content-left li, .navbar__megaIR-main-content-left li {
     flex-shrink: 0;
   }
+  .navbar__megaPF-main-content-left, .navbar__megaIR-main-content-left {
+    margin-top: 1.5rem;
+  }
   .navbar__megaPF-main-content-right-top-content, .navbar__megaIR-main-content-right-top-content {
     flex-direction: column;
     max-height: none;
     width: 100%;
+  }
+  .navbar__megaPF-main-content-text, .navbar__megaIR-main-content-text {
+    display: flex;
+    gap: 3rem;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
   }
   .navbar .navbar__megaIR .navbar__megaIR-main-content-right-top-content-photo,
   .navbar .navbar__megaIR-Integrations .navbar__megaIR-main-content-right-top-content-photo {
@@ -983,6 +997,28 @@ body {
     height: auto;
     border-radius: 0;
   }
+  .navbar__megaPF-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar__megaPF-left-bottom-grid {
+    grid-template-columns: auto;
+    row-gap: 1.2rem;
+  }
+  .navbar__megaPF-right {
+    display: none;
+  }
+  .navbar__megaPF-footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .navbar__megaPF-footer-right {
+    flex-direction: column-reverse;
+  }
+  .navbar__megaPF-footer-right-btnBook {
+    width: 100%;
+    text-align: center;
+  }
   .navbar__checkbox:checked ~ .navbar__top .navbar__list,
   .navbar__checkbox:checked ~ .navbar__action {
     display: flex;
@@ -1012,7 +1048,62 @@ body {
     background-color: #fff;
   }
   .navbar__item--cta .btn-login {
+    display: flex;
     justify-content: center;
+    padding: 4px 0 4px 0;
+    text-decoration: none;
+    color: #7D53EB;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .navbar__item--cta .btn-login::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #7D53EB;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    transition: 0.5s;
+  }
+  .navbar__item--cta .btn-login:hover::after {
+    width: 100%;
+  }
+  .navbar__item--cta .btn-start {
+    padding: 1.6rem 2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    background-color: #7D53EB;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  .navbar__item--cta .btn-start:hover {
+    background-color: #4D307E;
+  }
+  .navbar__item-check:checked ~ .navbar__megaPF,
+  .navbar__item-check:checked ~ .navbar__megaIR {
+    display: block;
+    transform: none;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar__item-check:checked ~ .navbar__menu {
+    color: #7D53EB;
+    font-weight: 600;
+  }
+  .navbar__item-check:checked ~ .navbar__menu svg {
+    transform: rotate(180deg);
+  }
+  .navbar__item-check:not(:checked) ~ .navbar__menu svg {
+    transform: rotate(0deg);
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
