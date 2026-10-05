@@ -12,6 +12,10 @@ html {
     font-size: 62.5%;
 }
 
+html, body {
+  overflow-x: clip; 
+}
+
 body {
     font-family: $font-family;
     color: color-black;

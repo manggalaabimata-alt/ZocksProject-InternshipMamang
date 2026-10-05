@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+html, body {
+  overflow-x: clip;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: color-black;
@@ -137,6 +141,7 @@ body {
   top: 100%;
   left: 50%;
   width: 124rem;
+  max-width: 92vw;
   background-color: #fff;
   border-radius: 1.6rem;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
@@ -1019,6 +1024,14 @@ body {
     width: 100%;
     text-align: center;
   }
+  .navbar__megaIR-main-content-right-top-content-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 4rem;
+    height: auto;
+  }
   .navbar__checkbox:checked ~ .navbar__top .navbar__list,
   .navbar__checkbox:checked ~ .navbar__action {
     display: flex;
@@ -1107,6 +1120,16 @@ body {
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .navbar__megaPF-right {
+    display: none;
+  }
+  .navbar__megaPF-left {
+    max-width: 100%;
+  }
+  .navbar__megaPF-left-bottom-grid {
+    width: 100%;
+    max-width: 100%;
+  }
   .header {
     margin: 0 auto;
     padding: 1.2rem 1.6rem;
@@ -1157,7 +1180,9 @@ body {
 }
 @media (min-width: 1025px) and (max-width: 1181px) {
   .navbar {
+    display: flex;
     justify-content: center;
+    width: 100%;
   }
   .navbar__top {
     flex: none;

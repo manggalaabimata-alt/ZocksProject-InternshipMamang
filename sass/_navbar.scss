@@ -146,6 +146,7 @@
     top: 100%;
     left: 50%;
     width: 124rem;
+    max-width: 92vw;
     // height: 72rem;
 
     background-color: #fff;
@@ -1297,6 +1298,28 @@
         }
       }
     }
+
+    &__megaIR {
+      &-main {
+        &-content {
+          &-right {
+            &-top {
+              &-content {
+                &-text {
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+
+                  margin: 0 auto;
+                  gap: 4rem;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   .navbar__checkbox:checked ~ .navbar__top .navbar__list,
@@ -1416,6 +1439,10 @@
 // TABLET
 
 @media (min-width: 769px) and (max-width: 1024px) {
+ .navbar__megaPF-right { display: none; }
+  .navbar__megaPF-left { max-width: 100%; }
+  .navbar__megaPF-left-bottom-grid { width: 100%; max-width: 100%; }
+  
   .header {
     margin: 0 auto;
     padding: 1.2rem 1.6rem;
@@ -1479,7 +1506,9 @@
 
 @media (min-width: 1025px) and (max-width: 1181px) {
   .navbar {
+    display: flex;
     justify-content: center;
+    width: 100%;
 
     &__top {
       flex: none;
